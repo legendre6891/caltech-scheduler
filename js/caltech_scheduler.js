@@ -10,12 +10,13 @@ function makeStruct(names) {
 }
 
 var CourseOptionEnum = Object.freeze({
-	ACM: {},
-	CS: {}
+	ACM: {str: "ACM"},
+	CS: {str: "CS"}
 });
 var CourseGradeEnum = Object.freeze({
-	EITHER: {},
-	GRADES: {}
+	EITHER: {str: "EITHER"},
+	GRADES: {str: "GRADES"},
+	PF: {str: "PASS/FAIL"}
 })
 
 var CaltechCourse = makeStruct("ID course_option course_number course_name units section prof_first_name prof_last_name subtitle annotations fixed_time times days locations grade");
@@ -24,7 +25,7 @@ ID,
 course_option,
 course_number,
 course_name,
-units, 
+units,
 section,
 prof_first_name,
 prof_last_name,
@@ -32,12 +33,12 @@ subtitle,
 annotations,
 fixed_time,
 times,
-days, 
-locations, 
+days,
+locations,
 grades
 */
 
-master_course_list = [
+MasterCourseList = [
 new CaltechCourse(0,
 	CourseOptionEnum.ACM,
 	"95",
@@ -73,10 +74,60 @@ new CaltechCourse(1,
 	)
 ]
 
+function getCourseShortName (course_id) {
+	var cc = MasterCourseList[course_id];
+	return cc.course_option.str + " " + cc.course_number;
+}
+
+
+function getCourseFilterName (course_id) {
+	var cc = MasterCourseList[course_id];
+	return cc.course_option.str.toLowerCase() + ' ' + cc.course_number;
+}
+
+function getCourseFullName (course_id) {
+	var cc = MasterCourseList[course_id];
+	return cc.course_name;
+}
+
+function getFilterButtonHTML (course_id) {
+	// Converts a CaltechCourse into
+	// a "filter button", which is used
+	// in conjunction with the filter bar.
+
+
+	var filtername = getCourseFilterName(course_id);
+	var classname = "list-group-item caltech-course"
+	var datacourseid = String(course_id);
+
+	var headingclass = "list-group-item-heading"
+	var headingname = getCourseShortName(course_id);
+
+	var subtitleclass = "list-group-item-text"
+	var subtitlename = getCourseFullName(course_id);
+
+	var htmlcode = 
+		sprintf('<a href="#" class="%s" data-course-name="%s" data-course-id="%s"><h4 class="%s">%s</h4><p class="%s">%s</p></a>',
+			classname, filtername, datacourseid, headingclass, headingname, subtitleclass, subtitlename);
+
+
+	return htmlcode;
+}
+
+
+function appendCaltechCourse (course_id) {
+	$("#course-filter-list").append(getFilterButtonHTML(course_id));
+}
+
+
+
+
 
 $(document).ready(
 	function()
 	{
+		appendCaltechCourse(0);
+		appendCaltechCourse(1);
 		$( ".caltech-course" ).hide();
 		$("#course-filter-box").keyup(
 			function()
