@@ -33,27 +33,10 @@
       <!-- Sprintf Javascript -->
       <script type="text/javascript" src="js/sprintf.js"></script>
 
+      <!-- Moment.js Javascript -->
+      <script type="text/javascript" src="js/moment.js"></script>
+
       <!-- Initialize fc -->
-      <script type="text/javascript">
-      	$(document).ready(function() {
-      		$('#calendar').fullCalendar({
-      			weekends: false,
-      			defaultView: 'agendaWeek',
-      			header: {
-      				left: false,
-      				center: false,
-      				right: false
-      			},
-      			allDaySlot: false,
-      			minTime: 8,
-      			maxTime: 22,
-      			columnFormat: {
-      				week: 'dddd'
-      			},
-      			height: 500
-      		})
-      	});
-      </script>
       <script type="text/javascript">
       	(function(a){a.fn.dfilter=function(b,c){b=b.replace(/^data-/,"");if(typeof c==="undefined"||c===""){return this.filter("[data-"+b+"]")}else if(typeof c==="boolean"){if(c){return this.filter("[data-"+b+"]")}else{return this.not("[data-"+b+"]")}}else if(a.isArray(c)){return this.filter("[data-"+b+'="'+c.join('"],[data-'+b+'="')+'"]')}return this.filter("[data-"+b+'="'+c+'"]')}})(jQuery)
       </script>
@@ -86,7 +69,7 @@
 
 		<div class="starter-template">
 
-			<div id="left" class="col-md-3">
+			<div id="left" class="col-md-2">
 				<!-- Filter box -->
 				<div id="filter-box">
 					<div class="input-group input-group-sm">
@@ -102,7 +85,7 @@
 					</div>
 				</div>
 			</div>
-			<div id='calendar' class="col-md-9"></div>
+			<div id='calendar' class="col-md-10"></div>
 		</div>
 
 	</div><!-- /.container -->
