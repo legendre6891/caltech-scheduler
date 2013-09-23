@@ -36,6 +36,9 @@
       <!-- Moment.js Javascript -->
       <script type="text/javascript" src="js/moment.js"></script>
 
+      <!-- underscore.js Javascript -->
+      <script type="text/javascript" src="js/underscore.js"></script>
+
       <!-- Initialize fc -->
       <script type="text/javascript">
       	(function(a){a.fn.dfilter=function(b,c){b=b.replace(/^data-/,"");if(typeof c==="undefined"||c===""){return this.filter("[data-"+b+"]")}else if(typeof c==="boolean"){if(c){return this.filter("[data-"+b+"]")}else{return this.not("[data-"+b+"]")}}else if(a.isArray(c)){return this.filter("[data-"+b+'="'+c.join('"],[data-'+b+'="')+'"]')}return this.filter("[data-"+b+'="'+c+'"]')}})(jQuery)
@@ -76,7 +79,7 @@
 						<span class="input-group-addon">
 							<span class="glyphicon glyphicon-search"></span>
 						</span>
-						<input type="search" class="form-control" placeholder="Add a class" id="course-filter-box">
+						<input type="search" class="form-control" placeholder="Search for a class" id="course-filter-box">
 					</div>
 				</div>
 				<div id="small-separator"></div>

@@ -128,6 +128,12 @@ function getCourseTimesAt (course_id, i) {
 	return getCourseTimes(course_id)[i];
 }
 
+function getCourseID (course_id) {
+	var cc = MasterCourseList[course_id];
+	return cc.ID;
+}
+
+
 function generateCourseShortName (course_id) {
 	var cc = MasterCourseList[course_id];
 	return cc.course_option.str + " " + cc.course_number;
@@ -164,7 +170,8 @@ function generateAtomicEvent (course_id, day_of_week, times) {
 		title : generateCourseFCTitle(course_id),
 		start : momentBegin.format(),
 		end : momentEnd.format(),
-		allDay : false
+		allDay : false,
+		course_id: course_id
 	};
 	return e;
 
@@ -198,14 +205,23 @@ function getFilterButtonHTML (course_id) {
 	var datacourseid = String(course_id);
 
 	var headingclass = "list-group-item-heading"
-	var headingname = generateCourseShortName(course_id);
+	var headingname = generateCourseShortName(course_id); 
+
 
 	var subtitleclass = "list-group-item-text"
 	var subtitlename = getCourseFullName(course_id);
+	subtitlename = "Section " + String(getCourseSectionNumber(course_id));
+
+
+	var badge = "";
+	if (isCourseActive(course_id) > -1)
+		badge = "glyphicon glyphicon-remove"
+	else
+		badge = "glyphicon glyphicon-plus"
 
 	var htmlcode = 
-		sprintf('<a href="#" class="%s" data-course-name="%s" data-course-id="%s"><h4 class="%s">%s</h4><p class="%s">%s</p></a>',
-			classname, filtername, datacourseid, headingclass, headingname, subtitleclass, subtitlename);
+		sprintf('<a href="#" class="%s" data-course-name="%s" data-course-id="%s"><span class="%s" style="float: right;"></span><h4 class="%s">%s</h4><p class="%s">%s</p></a>',
+			classname, filtername, datacourseid, badge, headingclass, headingname, subtitleclass, subtitlename);
 
 
 	return htmlcode;
@@ -219,8 +235,9 @@ function appendCaltechCourse (course_id) {
 function initializeFilterButtonClick () {
 		$("#course-filter-list").on('click', 'a.caltech-course', 
 			function () {
-				console.log( "You wanted to add course with id " + $(this).attr("data-course-id"));
-				addCourse(Number($(this).attr("data-course-id")));
+				toggleCourse(Number($(this).attr("data-course-id")));
+				filterFunction();
+				return false;
 			});
 }
 
@@ -259,11 +276,92 @@ function calendarRefresh () {
 	$("#calendar").fullCalendar('refetchEvents');
 }
 
-function addCourse (course_id) {
-	addAtomicEvents(getEventArray(course_id));
-	calendarRefresh();
+
+function isCourseActive (course_id) {
+	return _.indexOf(activeCoursesID, course_id);
 }
 
+
+function addCourse (course_id) {
+	// only add if course is not active
+	if (isCourseActive(course_id) == -1) {
+		activeCoursesID.push(course_id);
+		addAtomicEvents(getEventArray(course_id));
+		calendarRefresh();
+	};
+}
+
+
+function removeCourse (course_id) {
+	var ind = isCourseActive(course_id);
+	if (ind > -1) {
+		// first remove from active courses;
+		activeCoursesID.splice(ind, 1);
+
+		// next, remove from atomic events
+		activeCoursesAtomicEvents = _.filter(activeCoursesAtomicEvents,
+			function (e) {
+				return e.course_id != course_id;
+			});
+
+		calendarRefresh();
+
+	};
+}
+
+function toggleCourse (course_id) {
+	if (isCourseActive(course_id) > -1)
+	{
+		removeCourse(course_id);
+	}
+	else
+	{
+		addCourse(course_id);
+	}
+}
+
+function rankCoursesByFilter (search_term) {
+	var nCourses = MasterCourseList.length;
+	var id_pair_shortname = _.map(MasterCourseList, function (course) {
+		return [course.ID, generateCourseFilterName(course.ID)];
+	});
+
+
+	var id_pair_score = [];
+	_.map(id_pair_shortname, function (pair) {
+		var s = pair[1].score(search_term);
+		if (s)
+			id_pair_score.push([pair[0], s]);
+	});
+
+	var id_pair_sorted = _.sortBy(id_pair_score, function (pair) {
+		return -pair[1];
+	})
+
+	return _.map(id_pair_sorted, function (pair) {
+		return pair[0];
+	});
+
+}
+
+function filterFunction () {
+	var search_term = $("#course-filter-box").val();
+	var nCourses = MasterCourseList.length;
+
+	var filteredCourseIDs = rankCoursesByFilter(search_term);
+	var filterButtons = _.map(filteredCourseIDs, function (course_id) {
+		return getFilterButtonHTML(course_id);
+	})
+
+	$( "#course-filter-list" ).empty();
+	_.each(filterButtons, function (element, index, list) {
+		$("#course-filter-list").append(element);
+	})
+
+	return false;
+	// return filterButtons;
+
+}
 
 $(document).ready(
 	function()
@@ -281,13 +379,14 @@ $(document).ready(
 		$("#course-filter-box").keyup(
 			function()
 			{
-				var search_term = $("#course-filter-box").val();
-				// console.log(search_term);
-				$( ".caltech-course" ).hide();
-				$(".caltech-course").filter(function(index){
-					// console.log(($(this).attr('data-course-name')).score(search_term));
-					return ($(this).attr('data-course-name')).score(search_term) > 0;
-				}).show();
+				// var search_term = $("#course-filter-box").val();
+				// // console.log(search_term);
+				// $( ".caltech-course" ).hide();
+				// $(".caltech-course").filter(function(index){
+				// 	// console.log(($(this).attr('data-course-name')).score(search_term));
+				// 	return ($(this).attr('data-course-name')).score(search_term) > 0;
+				// }).show();
+				filterFunction();
 				// $( ".caltech-course").dfilter('course-name', search_term + "*.").show();
 			});
 
