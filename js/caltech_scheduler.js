@@ -53,7 +53,7 @@ new CaltechCourse(0,
 	"",
 	[],
 	true,
-	[[11, 12], [11,12]],
+	[[11.5, 13], [11,12]],
 	[[1,3,5],[2]],
 	["119 KRK", "11 DWN"],
 	CourseGradeEnum.EITHER
@@ -87,8 +87,8 @@ new CaltechCourse(2,
 	"",
 	[],
 	true,
-	[[11, 12], [11,12]],
-	[[1,3,5],[2]],
+	[[11, 12]],
+	[[1,3,5]],
 	["119 KRK", "11 DWN"],
 	CourseGradeEnum.EITHER
 	),
@@ -174,11 +174,17 @@ function generateAtomicEvent (course_id, day_of_week, times) {
 	momentBegin.day(day_of_week);
 	momentEnd.day(day_of_week);
 
-	momentBegin.hour(times[0]);
-	momentEnd.hour(times[1]);
+    startHour = Math.floor(times[0]);
+    startMinute = 60 * (times[0] % 1);
 
-	momentBegin.minute(0);
-	momentEnd.minute(0);
+    endHour = Math.floor(times[1]);
+    endMinute = 60 * (times[1] % 1);
+
+	momentBegin.hour(startHour);
+	momentEnd.hour(endHour);
+
+	momentBegin.minute(startMinute);
+	momentEnd.minute(endMinute);
 
 	momentBegin.second(0);
 	momentEnd.second(0);
