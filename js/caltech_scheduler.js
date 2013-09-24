@@ -74,7 +74,24 @@ new CaltechCourse(1,
 	[[1]],
 	[],
 	CourseGradeEnum.GRADES
-	)
+	),
+
+new CaltechCourse(2,
+	CourseOptionEnum.ACM,
+	"96",
+	"Introductory Methods of Applied Mathematics",
+	[4,0,8],
+	1,
+	"Pierce",
+	"N",
+	"",
+	[],
+	true,
+	[[11, 12], [11,12]],
+	[[1,3,5],[2]],
+	["119 KRK", "11 DWN"],
+	CourseGradeEnum.EITHER
+	),
 ];
 
 
