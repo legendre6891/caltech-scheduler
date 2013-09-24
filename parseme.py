@@ -48,7 +48,7 @@ def initial_parse(current_line):
 		[token, string] = function(token, string)
 
 
-	return [token, current_line]
+	return [token, string]
 
 
 
