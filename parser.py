@@ -87,21 +87,46 @@ Notes for step 3 and beyond:
     Guesses:
     0. Course name: the two tokens it is divided into should be read as the
     option and the course number.
-    1. Section number: the one token it is read as is the section number.
-    2. Units: we parse it into three tokens and construct a list out of
+    1. Course title: however many tokens it takes to form the title of the
+    course.
+    2. Section number: the one token it is read as is the section number.
+    3. Units: we parse it into three tokens and construct a list out of
     them.
-    3. Professor name: we remove the comma from the first name and read the
+    4. Professor name: we remove the comma from the first name and read the
     professor's first name and last name. We will put professor names into a
     list in step 3.
-    4. Days/time: Divide into two tokens, associate the days with the hours
+    5. Days/time: Divide into two tokens, associate the days with the hours
     on those days. A dictionary perhaps?
-    5. Location: Initial parsing should suffice for this.
-    6. Grade scheme: PASS-FAIL or GRADES.
-    7. Annotation: something like "lottery only..."
-    8. Unsure. Prompt user for manual input.
+    6. Location: Initial parsing should suffice for this.
+    7. Grade scheme: PASS-FAIL or GRADES.
+    8. Annotation: something like "lottery only..."
+    9. Unsure. Prompt user for manual input.
 '''
 
+def e_0(tokens, current_line):
+    ''' Process the initial tokens, guessing that they describes a course
+    name.
+    '''
+    return tokens, current_line
+
+def e_1(tokens, current_line):
+    ''' Process the initial tokens, guessing that they describe a course
+    title.
+    '''
+    return tokens, current_line
+
+def e_2(tokens, current_line):
+    ''' Process the initial parsing with the guess that we have a section
+    number. '''
+    return tokens, current_line
+
 def e_3(tokens, current_line):
+    ''' Process the result of the initial parsing with the guess that we
+    have a units line.
+    '''
+    return (current_line.split('-'), current_line)
+
+def e_4(tokens, current_line):
     ''' Process the initial tokens with the guess that we are processing
     professor name(s).
     '''
@@ -121,7 +146,7 @@ def e_3(tokens, current_line):
             cur_prof.append(tok)
     return (profs, current_line)
 
-def e_4(tokens, current_line):
+def e_5(tokens, current_line):
     ''' Process the initial tokens with the guess that we are processing
     day/times.
 
@@ -144,6 +169,22 @@ def e_4(tokens, current_line):
     output.append(processTime(start_time))
     output.append(processTime(end_time))
     return output
+
+def e_6(tokens, current_line):
+    ''' Further parse the initial parsing, guessing that we have a location.
+    '''
+    pass
+
+def e_7(tokens, current_line):
+    ''' Further parse the initial parsing, guessing that we have a grade
+    scheme.
+    '''
+    pass
+
+def e_8(tokens, current_line):
+    ''' Improve on the initial parsing, guessing that we have an annotation.
+    '''
+    pass
 
 def f_0(tokens, string): 
     # Return true if tokens match course name, false otherwise
@@ -194,9 +235,9 @@ daytime_string = 'MWF 11:30 - 13:00'
 
 def main():
     print name_string
-    print e_3(name_tokens, name_string)
+    print e_4(name_tokens, name_string)
     print daytime_string
-    print e_4(daytime_tokens, daytime_string)
+    print e_5(daytime_tokens, daytime_string)
 
 if __name__ == '__main__':
     main()
