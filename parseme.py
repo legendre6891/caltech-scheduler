@@ -41,7 +41,7 @@ def is_section(token, string):
 
 
 def is_professor_name(token, string):
-	return token[-2][-1] == ',' and token[-1].isupper()
+	return token[-2][-1] == ',' and token[-1].isupper() and len(token[-1]) == 1
 
 def is_day_time(token, string):
 
@@ -53,8 +53,23 @@ def is_day_time(token, string):
 	is_allowed = lambda word: word in allowed_words
 	pass_function = lambda word: is_allowed(word) or is_abbreviated(word)
 
-	token_zero_pass = all([pass_function(word) for word in token[0].split(',')])
-	return token_zero_pass
+
+	tokenpass = [0, 0, 0, 0]
+	tokenpass[0] = all([pass_function(word) for word in token[0].split(',')])
+
+	# now test for the other four tokens
+	is_time = lambda string: all([is_int(part) for part in string.split(':')]) \
+		and	len(string.split(':')) == 2
+
+	tokenpass[1] = is_time(token[1])
+	tokenpass[3] = is_time(token[3])
+
+	tokenpass[2] = token[2] == '-'
+	return all(tokenpass)
+
+
+def is_location(token, string):
+	pass
 
 def initial_parse(current_line):
 
@@ -76,6 +91,7 @@ def initial_parse(current_line):
 	(lambda t, s: [flatten_level_one_list(t), s], 3),
 	(lambda t, s: [map(lambda string: string.split('/'), t), s], 4),
 	(lambda t, s: [flatten_level_one_list(t), s], 5),
+	(lambda t, s: [[word in t if len(word) > 0], s], 6)
 	]
 
 	# Each of the func's in initial_parse_functions is run on [token, string]
@@ -87,7 +103,6 @@ def initial_parse(current_line):
 	string = current_line
 	for (function, priority) in initial_parse_functions:
 		[token, string] = function(token, string)
-
 
 	return [token, string]
 
