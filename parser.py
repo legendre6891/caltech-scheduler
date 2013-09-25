@@ -101,9 +101,9 @@ Notes for step 3 and beyond:
     8. Unsure. Prompt user for manual input.
 '''
 
-def e_3(current_type, current_line):
-    ''' Transform ['Vanier,', 'M', 'Pinkston,', 'D'] into [['Vanier', 'M'],
-    ['Pinkston', 'D']]. 
+def e_3(tokens, current_line):
+    ''' Process the initial tokens with the guess that we are processing
+    professor name(s).
     '''
     profs = []
     cur_prof = []
@@ -119,7 +119,31 @@ def e_3(current_type, current_line):
             cur_prof.append(tok[:-1])
         else:
             cur_prof.append(tok)
-    return profs
+    return (profs, current_line)
+
+def e_4(tokens, current_line):
+    ''' Process the initial tokens with the guess that we are processing
+    day/times.
+
+    Sample input: ['MWF', '11:30', '-', '13:00']
+    Sample output: [[1, 3, 5], 11.5, 13]
+    '''
+    day_to_num = {'M': 1, 'T': 2, 'W': 3, 'R': 4, 'F': 5}
+    days = tokens[0]
+    day_list = []
+    for d in days:
+        day_list.append(day_to_num[d])
+    start_time, end_time = filter(lambda s: len(s) > 1, tokens[1:])
+    # Gives us filtered = ['11:30', '13:00']
+    def processTime(t):
+        [left, right] = t.split(':')
+        if right == '00':
+            return left
+        return left + str(int(right) / 60.0)[1:]
+    output = [day_list]
+    output.append(processTime(start_time))
+    output.append(processTime(end_time))
+    return output
 
 def f_0(tokens, string): 
     # Return true if tokens match course name, false otherwise
@@ -163,10 +187,16 @@ def f_4(tokens, string):
                 return True
     return False
 
-tokens = ['Vanier,', 'M', 'Pinkston,', 'D']
+name_tokens = ['Von', 'Lewen,', 'M', 'Pinkston', 'Lloyd,', 'D']
+name_string = 'Von Lewen, M / Pinkston Lloyd, D'
+daytime_tokens = ['MWF', '11:30', '-', '13:00']
+daytime_string = 'MWF 11:30 - 13:00'
+
 def main():
-    tokens = ['Vanier,', 'M', 'Pinkston,', 'D']
-    print e_3(3, 'Vanier, M / Pinkston, D')
+    print name_string
+    print e_3(name_tokens, name_string)
+    print daytime_string
+    print e_4(daytime_tokens, daytime_string)
 
 if __name__ == '__main__':
     main()
