@@ -34,7 +34,7 @@ def is_course_name(token, string):
 
 def is_units(token, string):
 	s = string.split('-')
-	return string == '+' or (len(s)==3 and filter(is_int, s)==s)
+	return string == '+' or (len(s)==3 and all(map(is_int, s)))
 
 def is_section(token, string):
 	return is_int(string)
@@ -43,8 +43,18 @@ def is_section(token, string):
 def is_professor_name(token, string):
 	return token[-2][-1] == ',' and token[-1].isupper()
 
+def is_day_time(token, string):
 
+	# first test whether token[0] is a date abbreviation;
+	allowed_abbreviations = "MTWRF"
+	allowed_words = ["OM"]
 
+	is_abbreviated = lambda word: all([ch in allowed_abbreviations for ch in word])
+	is_allowed = lambda word: word in allowed_words
+	pass_function = lambda word: is_allowed(word) or is_abbreviated(word)
+
+	token_zero_pass = all([pass_function(word) for word in token[0].split(',')])
+	return token_zero_pass
 
 def initial_parse(current_line):
 
