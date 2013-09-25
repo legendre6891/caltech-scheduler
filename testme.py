@@ -2,18 +2,17 @@
 
 
 from sys import argv
-from sys import stdout
-from parseme import *
+from parseme import identify_type
 
 
 def main():
-	print initial_parse(argv[1])
 
 	with open(argv[1], "r") as f:
 	    lines = f.readlines()
 
 	for line in lines:
-		stdout.write(identify_type(line) + "|-->>  " + line)
+		line = line.rstrip()
+		print identify_type(line) + "|-->>  " + line
 
 if __name__ == '__main__':
 	main()

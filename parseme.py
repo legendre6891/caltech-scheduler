@@ -135,7 +135,8 @@ def is_location_part(token, string):
 	"Ramo",
 	"BAX",
 	"Ceramic",
-	"Room POLY"]
+	"Room POLY",
+	"100 - Rock"]
 
 	return token in [initial_parse(s)[0] for s in parts]
 
@@ -227,26 +228,36 @@ LINE_TYPES = {"COURSE_NAME" : [is_course_name],
 				  "LOCATION_PART" : [is_location_part],
 				  "ANNOTATION" : [is_annotation],
 				  "TIME_PART" : [is_time_part],
-				  "COURSE_TITLE" : [is_course_title]}
+				  "COURSE_TITLE" : [is_course_title],
+				  "UNSURE": [is_unsure]}
 
 
 def identify_type(line):
 
-	type_list = []
+	type_list = ["A",
+				 "UNITS",
+				 "COURSE_NAME",
+				 "SECTION",
+				 "PROFESSOR_NAME",
+				 "GRADE_SCHEME",
+				 "DAY_TIME",
+				 "LOCATION",
+				 "ANNOTATION",
+				 "LOCATION_PART",
+				 "TIME_PART",
+				 "COURSE_TITLE",
+				 "UNSURE"]
 
 	[token, string] = initial_parse(line)
-	for line_type, line_test in LINE_TYPES.iteritems():
+	for t in type_list:
 		try:
-			p = line_test[0](token, string)
+			p = LINE_TYPES[t][0](token, string)
 		except IndexError:
 			p = False
 		if p:
-			type_list.append(line_type)
+			return t
 
-	if type_list == []:
-		return "UNSURE"
-	else:
-		return ' '.join(type_list)
+
 
 def main():
 	print initial_parse(argv[1])
