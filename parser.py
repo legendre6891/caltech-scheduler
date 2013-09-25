@@ -173,18 +173,18 @@ def e_5(tokens, current_line):
 def e_6(tokens, current_line):
     ''' Further parse the initial parsing, guessing that we have a location.
     '''
-    pass
+    return tokens, current_line
 
 def e_7(tokens, current_line):
     ''' Further parse the initial parsing, guessing that we have a grade
     scheme.
     '''
-    pass
+    return tokens, current_line
 
 def e_8(tokens, current_line):
     ''' Improve on the initial parsing, guessing that we have an annotation.
     '''
-    pass
+    return tokens, current_line
 
 def f_0(tokens, string): 
     # Return true if tokens match course name, false otherwise
@@ -214,11 +214,22 @@ def f_2(tokens, string):
                 return False
         return True
 
+def flatten_level_one_list(xs):
+    return [a for b in xs for a in b]
+
 def f_3(tokens, string):
-    # Return true if tokens match professor name(s). The tokens we receive
-    # from step 3 will be a list of professors. For example, [['Vanier',
-    # 'M'], ['Pinkston', 'D']]
-    pass
+    ''' Return true if tokens match professor name(s). The tokens we receive
+    from step 3 will be a list of professors. For example, [['Vanier',
+    'M'], ['Pinkston', 'D']].
+    '''
+    # Each comma in a professor string should be a separate name
+    if len(tokens) == string.count(','):
+        s = string.split(' ')
+        # Remove the "/" character from the original string
+        simple_parse = filter(lambda w: re.match('[A-Za-z]', w), s)
+        delete_commas = map(lambda w: w.replace(",", ""), simple_parse)
+        return delete_commas == flatten_level_one_list(tokens)
+    return False
     
 def f_4(tokens, string):
     # Check if tokens match days/time
