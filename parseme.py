@@ -236,7 +236,11 @@ def identify_type(line):
 
 	[token, string] = initial_parse(line)
 	for line_type, line_test in LINE_TYPES.iteritems():
-		if line_test[0](token, string) == True:
+		try:
+			p = line_test[0](token, string)
+		except IndexError:
+			p = False
+		if p:
 			type_list.append(line_type)
 
 	if type_list == []:

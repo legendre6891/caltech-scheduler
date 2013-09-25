@@ -2,6 +2,7 @@
 
 
 from sys import argv
+from sys import stdout
 from parseme import *
 
 
@@ -12,7 +13,7 @@ def main():
 	    lines = f.readlines()
 
 	for line in lines:
-		print identify_type(line), line
+		stdout.write(identify_type(line) + "|-->>  " + line)
 
 if __name__ == '__main__':
 	main()
