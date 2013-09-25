@@ -18,7 +18,7 @@ def word_number_split(word):
 	return list(items)
 
 def is_course_word(word):
-	if re.match("^[A-Za-z,-]*$", word):
+	if re.match("^[A-Za-z,\-]*$", word):
 		return True
 	else:
 		return False
@@ -34,23 +34,44 @@ def is_int(s):
     except ValueError:
         return False
 
+def is_float(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
+
+
 
 def is_sublist_of(xs, ys):
 	# tests if xs is a sublist of ys
 	return all([x in ys for x in xs])
 
+def is_day_abbreviation(words):
+	# first test whether token[0] is a date abbreviation;
+	allowed_abbreviations = "MTWRFS"
+	allowed_words = ["OM"]
+
+	is_abbreviated = lambda word: all([ch in allowed_abbreviations for ch in word])
+	is_allowed = lambda word: word in allowed_words
+	pass_function = lambda word: is_allowed(word) or is_abbreviated(word)
+
+
+	return all([pass_function(word) for word in words.split(',')])
 
 
 def is_course_name(token, string):
 	options = ['Ae', 'An', 'ACM', 'AM', 'APh', 'Art', 'Ay', 'BMB', 'BE', 'Bi',
-	'BEM', 'Ch', 'CHE', 'CDS', 'CNS', 'CS', 'CE', 'Ec', 'ESL', 'EE', 'E', 'EN',
-	'ESE', 'F', 'FS', 'Ge', 'H', 'HPS', 'Hum', 'L', 'Law', 'Ma', 'MS', 'ME',
-	'Mu', 'Pl', 'PE', 'Ph', 'PS', 'PA', 'Psy', 'SS', 'SA', 'Wr']
+	'BEM', 'Ch', 'ChE', 'CDS', 'CNS', 'CS', 'CE', 'Ec', 'ESL', 'EE', 'E', 'En',
+	'ESE', 'EST', 'F', 'FS', 'Ge', 'H', 'HPS', 'Hum', 'L', 'Law', 'Ma', 'MS', 'ME',
+	'Mu', 'Pl', 'PE', 'Ph', 'PS', 'PA', 'Psy', 'SS', 'SA', 'Wr', 'CAM',
+	'CPH', 'UCL', 'EPT', 'MEL', 'EDN']
 	return token[0] in options
 
 def is_units(token, string):
 	s = string.split('-')
-	return string == '+' or (len(s)==3 and all(map(is_int, s)))
+	is_number = lambda s: is_int(s) or is_float(s)
+	return string == '+' or (len(s)==3 and all(map(is_number, s)))
 
 def is_section(token, string):
 	return is_int(string)
@@ -61,16 +82,8 @@ def is_professor_name(token, string):
 def is_day_time(token, string):
 
 	# first test whether token[0] is a date abbreviation;
-	allowed_abbreviations = "MTWRF"
-	allowed_words = ["OM"]
-
-	is_abbreviated = lambda word: all([ch in allowed_abbreviations for ch in word])
-	is_allowed = lambda word: word in allowed_words
-	pass_function = lambda word: is_allowed(word) or is_abbreviated(word)
-
-
 	tokenpass = [0, 0, 0, 0]
-	tokenpass[0] = all([pass_function(word) for word in token[0].split(',')])
+	tokenpass[0] = is_day_abbreviation(token[0])
 
 	# now test for the other four tokens
 	is_time = lambda string: all([is_int(part) for part in string.split(':')]) \
@@ -136,7 +149,8 @@ def is_location_part(token, string):
 	"BAX",
 	"Ceramic",
 	"Room POLY",
-	"100 - Rock"]
+	"100 - Rock",
+	"TR DAB"]
 
 	return token in [initial_parse(s)[0] for s in parts]
 
@@ -146,8 +160,9 @@ def is_annotation(token, string):
 		"lottery",
 		"change in",
 		"Permission",
-		"graduate students only",
-		"enrollment",
+		"graduate students",
+		"Maximum",
+		"enrollment:",
 		"Make-up",
 		"cancelled",
 		"Most sessions",
@@ -155,30 +170,73 @@ def is_annotation(token, string):
 		"research advisor",
 		"Required",
 		"Taught",
-		"Prerequisite",
+		"Prerequisite:",
 		"lecture time",
 		"Lecture Recitation Tutorial",
 		"permission",
 		"offered",
 		"arrangement",
+		"Field Trip:",
 		"Field Trip",
 		"updated",
 		"Sec",
 		"Formerly",
 		"Section",
-		"will meet"
+		"will meet",
+		"October.",
+		"OM to",
+		"Lab tour"
 	]
 	tokenized_annotations = [initial_parse(ann)[0] for ann in annotations]
 
 	return any([is_sublist_of(tok_ann, token) for tok_ann in tokenized_annotations])
 
-def is_time_part(token, string):
+
+
+def is_time_start(token, string):
+	# first test whether token[0] is a date abbreviation;
+	return is_day_abbreviation(token[0])
+
+
+def is_time_end(token, string):
 	is_time = lambda string: all([is_int(part) for part in string.split(':')]) \
 		and	len(string.split(':')) == 2
 	return is_time(token[0])
 
 def is_course_title(token, string):
-	return all([is_course_word(tok) for tok in token])
+	manual_courses = \
+	['Introduction to Earth and Planetary Sciences: Earth as a Planet',
+	'Freshman Seminar: Albatrosses, Beetles and Cetaceans',
+	'Freshman Seminar: Gravitational Waves',
+	'Discrete Differential Geometry: Theory and Applications',
+	'Intercollegiate Basketball Team (Men)',
+	"Undergraduate Research and Bachelor's Thesis",
+	"Earth's Atmosphere",
+	'18th-Century Philosophy: Locke to Kant',
+	"Earth's Oceans",
+	'European Civilization: Early Modern Europe',
+	'Karate (Shotokan), Beginning and Intermediate/Advanced',
+	'Freshman Seminar: Research Tutorial',
+	"Men's Glee Club",
+	'Freshman Seminar: The Science of Music',
+	'Angels and Monsters: Cosmology, Anthropology, and the Ends of the World',
+	"Women's Glee Club",
+	'The 19th-Century English Novel',
+	'Intercollegiate Cross Country Team (Men and Women)',
+	'Intercollegiate Water Polo Team (Men & Women)',
+	'Intercollegiate Swimming Team (Men and Women)',
+	'Freshman Seminar: In Search of Memory',
+	'Intercollegiate Volleyball Team (Women)',
+	"Master's Thesis Research",
+	'Intercollegiate Fencing Team (Men and Women)',
+	'Intercollegiate Soccer Team (Men)',
+	'European Civilization:  Modern Europe',
+	'Freshman Seminar: Earthquakes',
+	'Intercollegiate Basketball Team (Women)']
+
+
+	return all([is_course_word(tok) for tok in token]) or \
+		token in [initial_parse(s)[0] for s in manual_courses]
 
 def is_unsure(token, string):
 	return True
@@ -227,7 +285,8 @@ LINE_TYPES = {"COURSE_NAME" : [is_course_name],
 				  "A" : [is_A],
 				  "LOCATION_PART" : [is_location_part],
 				  "ANNOTATION" : [is_annotation],
-				  "TIME_PART" : [is_time_part],
+				  "TIME_START" : [is_time_start],
+				  "TIME_END" : [is_time_end],
 				  "COURSE_TITLE" : [is_course_title],
 				  "UNSURE": [is_unsure]}
 
@@ -235,6 +294,7 @@ LINE_TYPES = {"COURSE_NAME" : [is_course_name],
 def identify_type(line):
 
 	type_list = ["A",
+				 "ANNOTATION",
 				 "UNITS",
 				 "COURSE_NAME",
 				 "SECTION",
@@ -242,12 +302,14 @@ def identify_type(line):
 				 "GRADE_SCHEME",
 				 "DAY_TIME",
 				 "LOCATION",
-				 "ANNOTATION",
 				 "LOCATION_PART",
-				 "TIME_PART",
+				 "TIME_START",
+				 "TIME_END",
 				 "COURSE_TITLE",
 				 "UNSURE"]
 
+	if line == "":
+		return "BLANK_LINE"
 	[token, string] = initial_parse(line)
 	for t in type_list:
 		try:

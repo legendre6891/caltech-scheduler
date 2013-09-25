@@ -1,4 +1,3 @@
-[['c.txt'], 'c.txt']
 COURSE_NAME|-->>  Ae 100
 UNITS|-->>  +
 COURSE_TITLE|-->>  Research in Aerospace
@@ -54,7 +53,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Colonius, T
 DAY_TIME|-->>  MWF 10:00 - 10:55
 LOCATION|-->>  101 GUG
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ae/AM/CE/ME  102A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Mechanics of Structures and Solids
@@ -71,7 +70,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  McKeon, B
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  202 GUG
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ae 105A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Aerospace Engineering
@@ -87,7 +86,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Polk, J
 DAY_TIME|-->>  OM,T 13:00 - 13:55
 LOCATION|-->>  202 GUG
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ae 150A
 UNITS|-->>  1-0-0
 COURSE_TITLE|-->>  Aerospace Engineering Seminar
@@ -103,7 +102,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  van Zyl, J
 DAY_TIME|-->>  MR 13:00 - 14:25
 LOCATION|-->>  106 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ae/Ge/ME 160A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Continuum Mechanics of Fluids and Solids
@@ -253,7 +252,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Pullin, D
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  306 FIR
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ae 208A
 UNITS|-->>  1-0-0
 COURSE_TITLE|-->>  GALCIT Colloquium
@@ -269,7 +268,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Gdoutos, E
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ae 240
 UNITS|-->>  +
 COURSE_TITLE|-->>  Special Topics in Fluid Mechanics
@@ -294,95 +293,95 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  T 11:00 - 11:55
 LOCATION|-->>  11 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  W 10:00 - 10:55
 LOCATION|-->>  106 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  03
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  M 10:00 - 10:55
 LOCATION|-->>  106 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  04
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  W 09:00 - 09:55
 LOCATION|-->>  106 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  05
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  W 13:00 - 13:55
 LOCATION|-->>  314 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  06
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  T 13:00 - 13:55
 LOCATION|-->>  11 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  07
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  T 14:00 - 14:55
 LOCATION|-->>  119 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  08
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  M 15:00 - 15:55
 LOCATION|-->>  22 GTS
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  09
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 16:00 - 16:55
 LOCATION|-->>  119 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  10
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  M 14:00 - 14:55
 LOCATION|-->>  House STL
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  11
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  T 16:00 - 16:55
 LOCATION|-->>  119 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  12
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ACM100A
 UNITS|-->>  4-0-8
 COURSE_TITLE|-->>  Introductory Methods of Applied Mathematics
@@ -390,95 +389,95 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  T 11:00 - 11:55
 LOCATION|-->>  11 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  W 10:00 - 10:55
 LOCATION|-->>  106 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  03
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  M 10:00 - 10:55
 LOCATION|-->>  106 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  04
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  W 09:00 - 09:55
 LOCATION|-->>  106 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  05
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  W 13:00 - 13:55
 LOCATION|-->>  314 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  06
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  T 13:00 - 13:55
 LOCATION|-->>  11 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  07
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  T 14:00 - 14:55
 LOCATION|-->>  119 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  08
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  M 15:00 - 15:55
 LOCATION|-->>  27 GTS
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  09
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 16:00 - 16:55
 LOCATION|-->>  119 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  10
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  M 14:00 - 14:55
 LOCATION|-->>  House STL
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  11
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  T 16:00 - 16:55
 LOCATION|-->>  119 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  12
 PROFESSOR_NAME|-->>  Pierce, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  119 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ACM101A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Methods of Applied Mathematics I
@@ -487,7 +486,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Bruno, O
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  105 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ACM104
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Linear Algebra and Applied Operator Theory
@@ -496,7 +495,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Beck, J
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  105 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ACM106A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introductory Methods of Computational Mathematics
@@ -504,7 +503,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ames, B
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  105 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ACM/EE 116
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to Stochastic Processes and Modeling
@@ -513,7 +512,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Owhadi, H
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  105 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma/ACM 142
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Ordinary and Partial Differential Equations
@@ -521,7 +520,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Frank, R
 DAY_TIME|-->>  MWF 10:00 - 10:55
 LOCATION|-->>  159 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma/ACM 144A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Probability
@@ -529,7 +528,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Alberts, T
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  153 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ACM190
 UNITS|-->>  +
 COURSE_TITLE|-->>  Reading and Independent Study
@@ -679,7 +678,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Gdoutos, E
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  AM 250
 UNITS|-->>  +
 COURSE_TITLE|-->>  Research in Applied Mechanics
@@ -730,7 +729,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Scherer, A / Potter, K
 DAY_TIME|-->>  TR 13:00 - 13:55
 LOCATION|-->>  070 MRE
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  APh078A
 UNITS|-->>  0-9-0
 COURSE_TITLE|-->>  Senior Thesis, Experimental
@@ -822,7 +821,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Colonius, T
 DAY_TIME|-->>  MWF 10:00 - 10:55
 LOCATION|-->>  101 GUG
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ae/APh 104A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Experimental Methods
@@ -830,7 +829,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  McKeon, B
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  202 GUG
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  APh/MS 105A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  States of Matter
@@ -846,7 +845,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Troian, S / Ghaffari, A
 DAY_TIME|-->>  R 19:00 - 19:55
 LOCATION|-->>  104 WAT
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  APh110
 UNITS|-->>  2-0-0
 COURSE_TITLE|-->>  Topics in Applied Physics
@@ -862,7 +861,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Schwab, K
 DAY_TIME|-->>  MWF 09:00 - 09:55
 LOCATION|-->>  104 WAT
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph/APh/EE/BE  118A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Physics of Measurement
@@ -870,7 +869,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Roukes, M
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  107 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  MS/APh 120
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Diffraction and Structure
@@ -878,16 +877,16 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Fultz, B
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  104 WAT
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  MS/APh 122
 UNITS|-->>  0-3-0
 COURSE_TITLE|-->>  Diffraction, Imaging, and Structure
-UNSURE|-->>  Maximum enrollment: 8 students
+ANNOTATION|-->>  Maximum enrollment: 8 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Fultz, B / Garland, C
 DAY_TIME|-->>  OM,T 13:00 - 13:55
 LOCATION|-->>  042 KCK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  APh/EE 130
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Electromagnetic Theory
@@ -895,7 +894,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Crosignani, B
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  080 MRE
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  APh156A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Plasma Physics
@@ -913,7 +912,7 @@ SECTION|-->>  01
 COURSE_TITLE|-->>  Staff
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  APh200
 UNITS|-->>  +
 COURSE_TITLE|-->>  Applied Physics Research
@@ -1049,7 +1048,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Yeh, N
 DAY_TIME|-->>  MW 11:00 - 12:25
 LOCATION|-->>  107 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  APh300
 UNITS|-->>  +
 COURSE_TITLE|-->>  Thesis Research in Applied Physics
@@ -1146,7 +1145,7 @@ GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Art068
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Modern Art
-UNSURE|-->>  Maximum enrollment: 15 students
+ANNOTATION|-->>  Maximum enrollment: 15 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Robbins, C
 DAY_TIME|-->>  TR 14:30 - 15:55
@@ -1155,7 +1154,7 @@ GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  Art/H 153
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  West Coast Art since the Sixties
-UNSURE|-->>  Maximum enrollment: 15 students
+ANNOTATION|-->>  Maximum enrollment: 15 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Robbins, C
 DAY_TIME|-->>  TR 10:30 - 11:55
@@ -1164,13 +1163,13 @@ GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  Art169
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  The Arts of Dynastic China
-UNSURE|-->>  Maximum enrollment: 40 students
+ANNOTATION|-->>  Maximum enrollment: 40 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wolfgram, J
-UNSURE|-->>  OM,M 16:00 -
+TIME_START|-->>  OM,M 16:00 -
 LOCATION|-->>  19 BAX
 GRADE_SCHEME|-->>  LETTER
-TIME_PART|-->>  16:55
+TIME_END|-->>  16:55
 GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  Ay 043
 UNITS|-->>  +
@@ -1238,51 +1237,51 @@ UNITS|-->>  3-2-6
 COURSE_TITLE|-->>  Physics of Stars
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Hillenbrand, L
-UNSURE|-->>  OM,M 09:00 -
+TIME_START|-->>  OM,M 09:00 -
 LOCATION|-->>  219 CHL
-COURSE_TITLE|-->>  
-TIME_PART|-->>  09:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  09:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ay 111A
 UNITS|-->>  3-0-0
 COURSE_TITLE|-->>  Introduction to Current Astrophysics Research
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Steidel, C
-UNSURE|-->>  OM,M 09:00 -
+TIME_START|-->>  OM,M 09:00 -
 LOCATION|-->>  219 CHL
-COURSE_TITLE|-->>  
-TIME_PART|-->>  09:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  09:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ay 121
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Radiative Processes
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Hallinan, G / Ott, C
-UNSURE|-->>  OM,M 09:00 -
+TIME_START|-->>  OM,M 09:00 -
 LOCATION|-->>  219 CHL
-COURSE_TITLE|-->>  
-TIME_PART|-->>  09:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  09:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ay 122A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Astronomical Measurements and Instrumentation
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Cohen, J / Steidel, C
-UNSURE|-->>  OM,M 09:00 -
+TIME_START|-->>  OM,M 09:00 -
 LOCATION|-->>  219 CHL
-COURSE_TITLE|-->>  
-TIME_PART|-->>  09:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  09:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ay 123
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Structure and Evolution of Stars
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ellis, R
-UNSURE|-->>  OM,M 09:00 -
+TIME_START|-->>  OM,M 09:00 -
 LOCATION|-->>  219 CHL
-COURSE_TITLE|-->>  
-TIME_PART|-->>  09:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  09:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge/Ay 133
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  The Formation and Evolution of Planetary Systems
@@ -1290,7 +1289,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Knutson, H
 DAY_TIME|-->>  MWF 14:00 - 14:55
 LOCATION|-->>  176 SMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ay 141A
 UNITS|-->>  1-0-2
 COURSE_TITLE|-->>  Research Conference in Astronomy
@@ -1435,7 +1434,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Shan, S
 DAY_TIME|-->>  WF 10:30 - 11:55
 LOCATION|-->>  101 SCH
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  BMB/Ch 202A
 UNITS|-->>  1-0-0
 COURSE_TITLE|-->>  Biochemistry Seminar Course
@@ -1838,15 +1837,15 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Roukes, M
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  107 DWN
-COURSE_TITLE|-->>  
-UNSURE|-->>  ChE/BE 163
+BLANK_LINE|-->>  
+COURSE_NAME|-->>  ChE/BE 163
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to Biomolecular Engineering
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Arnold, F / Pierce, N
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  106 SPL
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  BE 167
 UNITS|-->>  1-0-0
 COURSE_TITLE|-->>  Research Topics in Bioengineering
@@ -2019,8 +2018,8 @@ LOCATION|-->>  119 KRK
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  FS/Bi/Ph 013
 UNITS|-->>  2-0-4
-UNSURE|-->>  Freshman Seminar: In Search of Memory
-UNSURE|-->>  Maximum enrollment: 13 students
+COURSE_TITLE|-->>  Freshman Seminar: In Search of Memory
+ANNOTATION|-->>  Maximum enrollment: 13 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Pine, J
 DAY_TIME|-->>  T 14:00 - 15:55
@@ -2283,10 +2282,10 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Richards, J
 DAY_TIME|-->>  TR 11:00 - 11:55
 LOCATION|-->>  147 NYS
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  W 14:00 - 15:55
 LOCATION|-->>  147 NYS
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Bi 122
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Genetics
@@ -2310,59 +2309,59 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Tydell, C
 DAY_TIME|-->>  MW 19:00 - 20:25
 LOCATION|-->>  200 BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Bi/CNS/NB 150
 UNITS|-->>  4-0-6
 COURSE_TITLE|-->>  Introduction to Neuroscience
-UNSURE|-->>  Maximum enrollment: 15 students per section
+ANNOTATION|-->>  Maximum enrollment: 15 students per section
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Lester, H / Adolphs, R
 DAY_TIME|-->>  MWF 11:00 - 11:55
-UNSURE|-->>  100 - Rock
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  100 - Rock
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  Auditorium
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 13:30 - 14:25
 LOCATION|-->>  101 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Lester, H / Adolphs, R
 DAY_TIME|-->>  MWF 11:00 - 11:55
-UNSURE|-->>  100 - Rock
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  100 - Rock
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  Auditorium
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 15:00 - 15:55
 LOCATION|-->>  101 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  03
 PROFESSOR_NAME|-->>  Lester, H / Adolphs, R
 DAY_TIME|-->>  MWF 11:00 - 11:55
-UNSURE|-->>  100 - Rock
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  100 - Rock
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  Auditorium
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 19:00 - 19:55
 LOCATION|-->>  101 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  04
 PROFESSOR_NAME|-->>  Lester, H / Adolphs, R
 DAY_TIME|-->>  MWF 11:00 - 11:55
-UNSURE|-->>  100 - Rock
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  100 - Rock
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  Auditorium
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 20:00 - 20:55
 LOCATION|-->>  101 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Bi 165
 UNITS|-->>  2-3-1
 COURSE_TITLE|-->>  Microbiology Bootcamp
@@ -2370,7 +2369,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Mazmanian, S / Jensen, G
 DAY_TIME|-->>  M 09:00 - 10:55
 LOCATION|-->>  151 BRN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ESE/Bi 166
 UNITS|-->>  3-1-5
 COURSE_TITLE|-->>  Microbial Physiology
@@ -2378,7 +2377,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Leadbetter, J
 DAY_TIME|-->>  MWF 10:00 - 10:55
 LOCATION|-->>  162 SMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  BMB/Bi/Ch 170A
 UNITS|-->>  3-1-5
 COURSE_TITLE|-->>  Biochemistry and Biophysics of Macromolecules and Molecular Assemblies
@@ -2405,16 +2404,16 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Perona, P
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  080 MRE
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Bi 192
 UNITS|-->>  2-0-4
 COURSE_TITLE|-->>  Introduction to Systems Biology
-UNSURE|-->>  Maximum enrollment: 10 students
+ANNOTATION|-->>  Maximum enrollment: 10 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Goentoro, L
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  101 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Bi/CNS/NB 216
 UNITS|-->>  2-0-4
 COURSE_TITLE|-->>  Behavior of Mammals
@@ -2422,7 +2421,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Allman, J
 COURSE_NAME|-->>  F 14:00 - 15:55
 LOCATION|-->>  200 BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Bi 250A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Topics in Molecular and Cellular Biology
@@ -2735,11 +2734,11 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wang, S
 DAY_TIME|-->>  M 19:00 - 21:55
 LOCATION|-->>  25 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  BEM103
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to Finance
-UNSURE|-->>  Maximum enrollment: 60 students
+ANNOTATION|-->>  Maximum enrollment: 60 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Rosenthal, J
 DAY_TIME|-->>  MW 09:00 - 10:25
@@ -2752,7 +2751,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Cvitanic, J
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  228 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  BEM190
 UNITS|-->>  +
 COURSE_TITLE|-->>  Undergraduate Research Project
@@ -2771,15 +2770,15 @@ PROFESSOR_NAME|-->>  Bossaerts, P
 A|-->>  A
 A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
-UNSURE|-->>  ChE062
+COURSE_NAME|-->>  ChE062
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Separation Processes
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Seinfeld, J
 DAY_TIME|-->>  MWF 14:00 - 14:55
 LOCATION|-->>  106 SPL
-COURSE_TITLE|-->>  
-UNSURE|-->>  ChE080
+BLANK_LINE|-->>  
+COURSE_NAME|-->>  ChE080
 UNITS|-->>  +
 COURSE_TITLE|-->>  Undergraduate Research
 SECTION|-->>  01
@@ -2842,7 +2841,7 @@ PROFESSOR_NAME|-->>  Giapis, K
 A|-->>  A
 A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
-UNSURE|-->>  ChE090A
+COURSE_NAME|-->>  ChE090A
 UNITS|-->>  +
 COURSE_TITLE|-->>  Senior Thesis
 SECTION|-->>  01
@@ -2877,16 +2876,16 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Parker, C
 DAY_TIME|-->>  M 13:00 - 14:55
 LOCATION|-->>  101 SCH
-COURSE_TITLE|-->>  
-UNSURE|-->>  ChE103A
+BLANK_LINE|-->>  
+COURSE_NAME|-->>  ChE103A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Transport Phenomena
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Kornfield, J
 DAY_TIME|-->>  MWF 10:00 - 10:55
 LOCATION|-->>  106 SPL
-COURSE_TITLE|-->>  
-UNSURE|-->>  ChE126
+BLANK_LINE|-->>  
+COURSE_NAME|-->>  ChE126
 UNITS|-->>  1-6-2
 COURSE_TITLE|-->>  Chemical Engineering Laboratory
 SECTION|-->>  02
@@ -2899,7 +2898,7 @@ PROFESSOR_NAME|-->>  Vicic, M
 DAY_TIME|-->>  TR 13:00 - 15:55
 LOCATION|-->>  122 SPL
 GRADE_SCHEME|-->>  LETTER
-UNSURE|-->>  ChE151A
+COURSE_NAME|-->>  ChE151A
 UNITS|-->>  3-0-9
 COURSE_TITLE|-->>  Physical and Chemical Rate Processes
 SECTION|-->>  01
@@ -2907,7 +2906,7 @@ PROFESSOR_NAME|-->>  Brady, J
 DAY_TIME|-->>  MWF 09:00 - 09:55
 LOCATION|-->>  102 SPL
 GRADE_SCHEME|-->>  LETTER
-UNSURE|-->>  ChE152
+COURSE_NAME|-->>  ChE152
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Heterogeneous Kinetics and Reaction Engineering
 SECTION|-->>  01
@@ -2915,23 +2914,23 @@ PROFESSOR_NAME|-->>  Giapis, K
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  106 SPL
 GRADE_SCHEME|-->>  LETTER
-UNSURE|-->>  ChE/BE 163
+COURSE_NAME|-->>  ChE/BE 163
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to Biomolecular Engineering
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Arnold, F / Pierce, N
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  106 SPL
-COURSE_TITLE|-->>  
-UNSURE|-->>  ChE/Ch 165
+BLANK_LINE|-->>  
+COURSE_NAME|-->>  ChE/Ch 165
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Chemical Thermodynamics
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wang, Z
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  106 SPL
-COURSE_TITLE|-->>  
-UNSURE|-->>  ChE280
+BLANK_LINE|-->>  
+COURSE_NAME|-->>  ChE280
 UNITS|-->>  +
 COURSE_TITLE|-->>  Chemical Engineering Research
 SECTION|-->>  01
@@ -3217,7 +3216,7 @@ GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Ch 003X
 UNITS|-->>  1-3-2
 COURSE_TITLE|-->>  Experimental Methods in Solar Energy Conversion
-UNSURE|-->>  Maximum Enrollment: 16 students per section
+ANNOTATION|-->>  Maximum Enrollment: 16 students per section
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Mendez, J
 COURSE_NAME|-->>  F 09:00 - 09:55
@@ -3237,14 +3236,14 @@ GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Ch 005B
 UNITS|-->>  1-6-2
 COURSE_TITLE|-->>  Advanced Techniques of Synthesis and Analysis
-UNSURE|-->>  OM on the first Monday of the term from 2-3pm to arrange lab hours  on Mondays and Fridays (8am-4pm)/Thursdays (1-4pm).  OM to  decide lecture time.
+ANNOTATION|-->>  OM on the first Monday of the term from 2-3pm to arrange lab hours  on Mondays and Fridays (8am-4pm)/Thursdays (1-4pm).  OM to  decide lecture time.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Agapie, T
-UNSURE|-->>  OM,M 14:00 -
+TIME_START|-->>  OM,M 14:00 -
 LOCATION|-->>  MEAD
-COURSE_TITLE|-->>  
-TIME_PART|-->>  14:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  14:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ch 008
 UNITS|-->>  1-6-2
 COURSE_TITLE|-->>  Experimental Procedures of Synthetic Chemistry
@@ -3252,14 +3251,14 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Mendez, J
 DAY_TIME|-->>  M 14:30 - 15:25
 LOCATION|-->>  147 NYS
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 A|-->>  A
 LOCATION|-->>  105 MEAD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ch 010A
 UNITS|-->>  2-0-1
 COURSE_TITLE|-->>  Frontiers in Chemistry
-UNSURE|-->>  Lab tour times to be determined.
+ANNOTATION|-->>  Lab tour times to be determined.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Dervan, P / Hoelz, A
 DAY_TIME|-->>  R 12:00 - 12:55
@@ -3271,7 +3270,7 @@ GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Ch 015
 UNITS|-->>  0-6-4
 COURSE_TITLE|-->>  Chemical Equilibrium and Analysis Laboratory
-UNSURE|-->>  OM to decide lecture time.//Each student must select 2 lab times:  Tuesdays 8-11am; Tuesdays 1-4pm; Wednesdays 1-4pm; and  Thursdays 8-11am.
+ANNOTATION|-->>  OM to decide lecture time.//Each student must select 2 lab times:  Tuesdays 8-11am; Tuesdays 1-4pm; Wednesdays 1-4pm; and  Thursdays 8-11am.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Dalleska, N
 DAY_TIME|-->>  OM,T 14:00 - 14:55
@@ -3292,7 +3291,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Dougherty, D
 DAY_TIME|-->>  MWF 09:00 - 09:55
 LOCATION|-->>  153 NYS
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ch 080
 UNITS|-->>  +
 COURSE_TITLE|-->>  Chemical Research
@@ -3439,7 +3438,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Parker, C
 DAY_TIME|-->>  M 13:00 - 14:55
 LOCATION|-->>  101 SCH
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Bi/Ch 110
 UNITS|-->>  4-0-8
 COURSE_TITLE|-->>  Introduction to Biochemistry
@@ -3448,10 +3447,10 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Richards, J
 DAY_TIME|-->>  TR 11:00 - 11:55
 LOCATION|-->>  147 NYS
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  W 14:00 - 15:55
 LOCATION|-->>  147 NYS
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ch 112
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Inorganic Chemistry
@@ -3459,7 +3458,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Bercaw, J
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  147 NYS
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ch 122
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Structure Determination by X-ray Crystallography
@@ -3481,11 +3480,11 @@ UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Nuclear Chemistry
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Burnett, D
-UNSURE|-->>  OM,M 17:10 -
+TIME_START|-->>  OM,M 17:10 -
 LOCATION|-->>  015 NMD
-COURSE_TITLE|-->>  
-TIME_PART|-->>  17:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  17:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Bi/Ch 132
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Biophysics of Macromolecules
@@ -3508,21 +3507,21 @@ GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  Ch 149
 UNITS|-->>  2-0-4
 COURSE_TITLE|-->>  Tutorial in Organic Chemistry
-UNSURE|-->>  Prerequisite: Ch 41abc & instructor's permission. // This course is  intended primarily for 1st-year grad students with a strong  foundation in organic chemistry. // Meets during the month of
-UNSURE|-->>  October. // OM to decide lecture time.
+ANNOTATION|-->>  Prerequisite: Ch 41abc & instructor's permission. // This course is  intended primarily for 1st-year grad students with a strong  foundation in organic chemistry. // Meets during the month of
+ANNOTATION|-->>  October. // OM to decide lecture time.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Fu, G / Reisman, S
 COURSE_TITLE|-->>  OM,A
 A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
-UNSURE|-->>  ChE/Ch 165
+COURSE_NAME|-->>  ChE/Ch 165
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Chemical Thermodynamics
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wang, Z
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  106 SPL
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  BMB/Bi/Ch 170A
 UNITS|-->>  3-1-5
 COURSE_TITLE|-->>  Biochemistry and Biophysics of Macromolecules and Molecular Assemblies
@@ -3536,10 +3535,10 @@ UNITS|-->>  3-0-0
 COURSE_TITLE|-->>  Atmospheric Chemistry II
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wennberg, P / Seinfeld, J
-UNSURE|-->>  OM,M 09:00 -
+TIME_START|-->>  OM,M 09:00 -
 LOCATION|-->>  135 L+R
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  09:55
+TIME_END|-->>  09:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  BMB/Ch 178
 UNITS|-->>  3-0-6
@@ -3548,7 +3547,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Shan, S
 DAY_TIME|-->>  WF 10:30 - 11:55
 LOCATION|-->>  101 SCH
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ch 180
 UNITS|-->>  +
 COURSE_TITLE|-->>  Chemical Research
@@ -3603,10 +3602,10 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Stoltz, B
 DAY_TIME|-->>  MWF 09:00 - 09:55
 LOCATION|-->>  147 NYS
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  TR 19:00 - 20:55
 LOCATION|-->>  147 NYS
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ch 280
 UNITS|-->>  +
 COURSE_TITLE|-->>  Chemical Research
@@ -3877,7 +3876,7 @@ SECTION|-->>  01
 COURSE_TITLE|-->>  Staff
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ae/APh/CE/ME  101A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Fluid Mechanics
@@ -3885,7 +3884,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Colonius, T
 DAY_TIME|-->>  MWF 10:00 - 10:55
 LOCATION|-->>  101 GUG
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ae/AM/CE/ME  102A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Mechanics of Structures and Solids
@@ -3919,7 +3918,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Kohler, M
 DAY_TIME|-->>  OM,T 13:00 - 15:55
 LOCATION|-->>  110 TOM
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CE 200
 UNITS|-->>  +
 COURSE_TITLE|-->>  Advanced Work in Civil Engineering
@@ -3962,82 +3961,82 @@ COURSE_TITLE|-->>  Introduction to Computation and Neural Systems
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Perona, P
 DAY_TIME|-->>  W 19:00 - 19:55
-UNSURE|-->>  100 - Rock
+LOCATION_PART|-->>  100 - Rock
 GRADE_SCHEME|-->>  PASS-FAIL
 LOCATION_PART|-->>  Auditorium
 GRADE_SCHEME|-->>  PASS-FAIL
 LOCATION_PART|-->>  BRD
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Psy/CNS 105A
-UNSURE|-->>  1.5-0-3.5
+UNITS|-->>  1.5-0-3.5
 COURSE_TITLE|-->>  Frontiers in Neuroeconomics
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  O'Doherty, J
 DAY_TIME|-->>  M 10:30 - 11:55
 LOCATION|-->>  125 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Bi/CNS/NB 150
 UNITS|-->>  4-0-6
 COURSE_TITLE|-->>  Introduction to Neuroscience
-UNSURE|-->>  Maximum enrollment: 15 students per section
+ANNOTATION|-->>  Maximum enrollment: 15 students per section
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Lester, H / Adolphs, R
 DAY_TIME|-->>  MWF 11:00 - 11:55
-UNSURE|-->>  100 - Rock
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  100 - Rock
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  Auditorium
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 13:30 - 14:25
 LOCATION|-->>  101 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Lester, H / Adolphs, R
 DAY_TIME|-->>  MWF 11:00 - 11:55
-UNSURE|-->>  100 - Rock
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  100 - Rock
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  Auditorium
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 15:00 - 15:55
 LOCATION|-->>  101 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  03
 PROFESSOR_NAME|-->>  Lester, H / Adolphs, R
 DAY_TIME|-->>  MWF 11:00 - 11:55
-UNSURE|-->>  100 - Rock
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  100 - Rock
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  Auditorium
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 19:00 - 19:55
 LOCATION|-->>  101 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  04
 PROFESSOR_NAME|-->>  Lester, H / Adolphs, R
 DAY_TIME|-->>  MWF 11:00 - 11:55
-UNSURE|-->>  100 - Rock
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  100 - Rock
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  Auditorium
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 20:00 - 20:55
 LOCATION|-->>  101 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS/CNS/EE  156A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Learning Systems
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Abu-Mostafa, Y
-UNSURE|-->>  OM,M 17:00 -
+TIME_START|-->>  OM,M 17:00 -
 LOCATION|-->>  070 MRE
-COURSE_TITLE|-->>  
-TIME_PART|-->>  17:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  17:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS/CNS 171
 UNITS|-->>  3-6-3
 COURSE_TITLE|-->>  Introduction to Computer Graphics Laboratory
@@ -4045,7 +4044,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Barr, A
 DAY_TIME|-->>  MWF 15:00 - 15:55
 LOCATION|-->>  107 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CNS180
 UNITS|-->>  +
 COURSE_TITLE|-->>  Research in Computation and Neural Systems
@@ -4196,7 +4195,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Perona, P
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  080 MRE
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Bi/CNS/NB 216
 UNITS|-->>  2-0-4
 COURSE_TITLE|-->>  Behavior of Mammals
@@ -4204,7 +4203,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Allman, J
 COURSE_NAME|-->>  F 14:00 - 15:55
 LOCATION|-->>  200 BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CNS280
 UNITS|-->>  +
 COURSE_TITLE|-->>  Research in Computation and Neural Systems
@@ -4362,7 +4361,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wilson, R
 DAY_TIME|-->>  MWF 13:00 - 13:55
 LOCATION|-->>  151 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS 009
 UNITS|-->>  1-0-0
 COURSE_TITLE|-->>  Introduction to Computer Science Research
@@ -4374,13 +4373,13 @@ GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  CS 011
 UNITS|-->>  0-3-0
 COURSE_TITLE|-->>  Computer Language Shop
-COURSE_NAME|-->>  CS 1 or instructor's permission is required.
+ANNOTATION|-->>  CS 1 or instructor's permission is required.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Pinkston, D / Vanier, M
-UNSURE|-->>  OM,M 21:00 -
+TIME_START|-->>  OM,M 21:00 -
 LOCATION|-->>  105 ANB
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  21:55
+TIME_END|-->>  21:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  EE/CS 051
 UNITS|-->>  4-5-3
@@ -4389,17 +4388,17 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  George, G
 DAY_TIME|-->>  MWF 15:00 - 16:25
 LOCATION|-->>  070 MRE
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  EE/CS 053
 UNITS|-->>  0-12-0
 COURSE_TITLE|-->>  Microprocessor Project Laboratory
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  George, G
-UNSURE|-->>  OM,W 16:30 -
+TIME_START|-->>  OM,W 16:30 -
 LOCATION|-->>  070 MRE
-COURSE_TITLE|-->>  
-TIME_PART|-->>  17:25
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  17:25
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS 080A
 UNITS|-->>  +
 COURSE_TITLE|-->>  Undergraduate Thesis
@@ -4556,7 +4555,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Joshi, R
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  243 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS 121
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to Relational Databases
@@ -4564,7 +4563,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Pinkston, D
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  105 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  EE/Ma/CS 126A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Information Theory
@@ -4580,7 +4579,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ledyard, J
 DAY_TIME|-->>  WF 13:00 - 14:25
 LOCATION|-->>  25 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS/EE 143
 UNITS|-->>  3-3-3
 COURSE_TITLE|-->>  Communication Networks
@@ -4588,7 +4587,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Low, S
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  213 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  SS/CS 149
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to Algorithmic Economics
@@ -4596,17 +4595,17 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ligett, K
 DAY_TIME|-->>  MW 10:30 - 11:55
 LOCATION|-->>  213 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS/CNS/EE  156A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Learning Systems
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Abu-Mostafa, Y
-UNSURE|-->>  OM,M 17:00 -
+TIME_START|-->>  OM,M 17:00 -
 LOCATION|-->>  070 MRE
-COURSE_TITLE|-->>  
-TIME_PART|-->>  17:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  17:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS/CNS 171
 UNITS|-->>  3-6-3
 COURSE_TITLE|-->>  Introduction to Computer Graphics Laboratory
@@ -4614,18 +4613,18 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Barr, A
 DAY_TIME|-->>  MWF 15:00 - 15:55
 LOCATION|-->>  107 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS 177
 UNITS|-->>  3-3-3
-UNSURE|-->>  Discrete Differential Geometry: Theory and Applications
+COURSE_TITLE|-->>  Discrete Differential Geometry: Theory and Applications
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Schroeder, P
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  314 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS 180
 UNITS|-->>  +
-UNSURE|-->>  Master's Thesis Research
+COURSE_TITLE|-->>  Master's Thesis Research
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Martin, A
 A|-->>  A
@@ -4693,7 +4692,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Martin, A
 DAY_TIME|-->>  MW 13:00 - 14:25
 LOCATION|-->>  243 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CNS/Bi/Ph/CS/N B 187
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Neural Computation
@@ -4701,7 +4700,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Perona, P
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  080 MRE
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph/CS 219A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Quantum Computation
@@ -4709,7 +4708,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Preskill, J / Kitaev, A
 DAY_TIME|-->>  MW 14:30 - 15:55
 LOCATION|-->>  269 LAU
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS 280
 UNITS|-->>  +
 COURSE_TITLE|-->>  Research in Computer Science
@@ -4790,16 +4789,16 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ligett, K
 DAY_TIME|-->>  M 13:00 - 15:55
 LOCATION|-->>  314 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CDS090A
 UNITS|-->>  0-0-9
 COURSE_TITLE|-->>  Senior Thesis in Control and Dynamical Systems
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Murray, R
-UNSURE|-->>  OM,M 15:00 -
+TIME_START|-->>  OM,M 15:00 -
 LOCATION|-->>  106 ANB
 GRADE_SCHEME|-->>  LETTER
-TIME_PART|-->>  15:55
+TIME_END|-->>  15:55
 GRADE_SCHEME|-->>  LETTER
 COURSE_TITLE|-->>  Do
 COURSE_TITLE|-->>  Staff
@@ -4823,7 +4822,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  MacMartin, D
 DAY_TIME|-->>  MW 14:00 - 14:55
 LOCATION|-->>  105 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CDS110A
 UNITS|-->>  3-0-9
 COURSE_TITLE|-->>  Introductory Control Theory
@@ -4831,7 +4830,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  MacMartin, D
 DAY_TIME|-->>  MWF 14:00 - 14:55
 LOCATION|-->>  105 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CDS190
 UNITS|-->>  +
 COURSE_TITLE|-->>  Independent Work in Control and Dynamical Systems
@@ -4849,7 +4848,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Beck, J
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  105 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CDS212
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to Modern Control
@@ -4971,11 +4970,11 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Camerer, C
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  127 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ec 121A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Theory of Value
-UNSURE|-->>  Maximum enrollment: 15 students
+ANNOTATION|-->>  Maximum enrollment: 15 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Saito, K
 DAY_TIME|-->>  MW 14:30 - 15:55
@@ -4984,12 +4983,12 @@ GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  Ec 122
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Econometrics
-UNSURE|-->>  Maximum Enrollment: 35 students
+ANNOTATION|-->>  Maximum Enrollment: 35 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Sherman, R
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  125 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ec/CS 133
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Electricity Markets
@@ -4997,7 +4996,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ledyard, J
 DAY_TIME|-->>  WF 13:00 - 14:25
 LOCATION|-->>  25 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ec 135
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Economics of Uncertainty and Information
@@ -5038,7 +5037,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Scherer, A / Potter, K
 DAY_TIME|-->>  TR 13:00 - 13:55
 LOCATION|-->>  070 MRE
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  EE 044
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Circuits and Systems
@@ -5054,17 +5053,17 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  George, G
 DAY_TIME|-->>  MWF 15:00 - 16:25
 LOCATION|-->>  070 MRE
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  EE/CS 053
 UNITS|-->>  0-12-0
 COURSE_TITLE|-->>  Microprocessor Project Laboratory
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  George, G
-UNSURE|-->>  OM,W 16:30 -
+TIME_START|-->>  OM,W 16:30 -
 LOCATION|-->>  070 MRE
-COURSE_TITLE|-->>  
-TIME_PART|-->>  17:25
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  17:25
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  EE 080A
 UNITS|-->>  +
 COURSE_TITLE|-->>  Senior Thesis
@@ -5127,14 +5126,14 @@ PROFESSOR_NAME|-->>  Hassibi, B
 A|-->>  A
 A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
-UNSURE|-->>  EST/EE/ME 109
+COURSE_NAME|-->>  EST/EE/ME 109
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Energy Technology and Policy
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Rutledge, D
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  106 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  EE 111
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Signal-Processing Systems and Transforms
@@ -5142,7 +5141,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Vaidyanathan, P
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  080 MRE
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  EE/MedE 115
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Micro-/Nano-scales Electro-Optics
@@ -5159,7 +5158,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Owhadi, H
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  105 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph/APh/EE/BE  118A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Physics of Measurement
@@ -5167,7 +5166,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Roukes, M
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  107 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  EE/Ma/CS 126A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Information Theory
@@ -5183,7 +5182,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Crosignani, B
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  080 MRE
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS/EE 143
 UNITS|-->>  3-3-3
 COURSE_TITLE|-->>  Communication Networks
@@ -5191,17 +5190,17 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Low, S
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  213 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS/CNS/EE  156A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Learning Systems
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Abu-Mostafa, Y
-UNSURE|-->>  OM,M 17:00 -
+TIME_START|-->>  OM,M 17:00 -
 LOCATION|-->>  070 MRE
-COURSE_TITLE|-->>  
-TIME_PART|-->>  17:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  17:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  EE/Ae 157A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to the Physics of Remote Sensing
@@ -5209,7 +5208,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  van Zyl, J
 DAY_TIME|-->>  MR 13:00 - 14:25
 LOCATION|-->>  106 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CS/EE 181A
 UNITS|-->>  3-6-3
 COURSE_TITLE|-->>  VLSI Design Laboratory
@@ -5217,7 +5216,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Martin, A
 DAY_TIME|-->>  MW 13:00 - 14:25
 LOCATION|-->>  243 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  EE 291
 UNITS|-->>  +
 COURSE_TITLE|-->>  Advanced Work in Electrical Engineering
@@ -5431,14 +5430,14 @@ PROFESSOR_NAME|-->>  Chandrasekaran, V
 A|-->>  A
 A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
-UNSURE|-->>  EST/EE/ME 109
+COURSE_NAME|-->>  EST/EE/ME 109
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Energy Technology and Policy
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Rutledge, D
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  106 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  E  002
 UNITS|-->>  1-0-0
 COURSE_TITLE|-->>  Frontiers in Engineering and Applied Science
@@ -5450,7 +5449,7 @@ GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  E  010
 UNITS|-->>  1-0-2
 COURSE_TITLE|-->>  Technical Seminar Presentations
-UNSURE|-->>  Maximum enrollment: 6 students per section
+ANNOTATION|-->>  Maximum enrollment: 6 students per section
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Fender, A
 DAY_TIME|-->>  OM,T 19:00 - 19:55
@@ -5530,7 +5529,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Pickar, K
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  206 TOM
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  E  110
 UNITS|-->>  1-0-1
 COURSE_TITLE|-->>  Principles of University Teaching in STEM
@@ -5542,42 +5541,42 @@ GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Hum/En 005
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Major British Authors
-UNSURE|-->>  Maximum enrollment: 15 students//Class closed to continuing  students until term start.
+ANNOTATION|-->>  Maximum enrollment: 15 students//Class closed to continuing  students until term start.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Jahner, J
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  115 DAB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Pigman, G
 DAY_TIME|-->>  TR 14:30 - 15:55
-COURSE_TITLE|-->>  TR DAB
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  TR DAB
+BLANK_LINE|-->>  
 SECTION|-->>  03
 PROFESSOR_NAME|-->>  Gilmore, D
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  19 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  04
 PROFESSOR_NAME|-->>  Haugen, K
 DAY_TIME|-->>  T 19:00 - 21:55
 LOCATION|-->>  115 DAB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  05
 PROFESSOR_NAME|-->>  Haugen, K
 DAY_TIME|-->>  W 19:00 - 21:55
 LOCATION|-->>  115 DAB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Hum/En 006
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  American Literature and Culture
-UNSURE|-->>  Maximum Enrollment: 15 students // Class closed to continuing  students until term start.
+ANNOTATION|-->>  Maximum Enrollment: 15 students // Class closed to continuing  students until term start.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Jurca, C
 DAY_TIME|-->>  W 13:00 - 15:55
 LOCATION|-->>  33 BAX
-COURSE_TITLE|-->>  
-UNSURE|-->>  En 089
+BLANK_LINE|-->>  
+COURSE_NAME|-->>  En 089
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Writing the News - Journalistic Writing
 ANNOTATION|-->>  Class cancelled
@@ -5585,8 +5584,8 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Kipling, R
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
-UNSURE|-->>  En 098
+BLANK_LINE|-->>  
+COURSE_NAME|-->>  En 098
 UNITS|-->>  +
 COURSE_TITLE|-->>  Reading in English
 SECTION|-->>  01
@@ -5594,7 +5593,7 @@ PROFESSOR_NAME|-->>  Gilmartin, K
 A|-->>  A
 A|-->>  A
 GRADE_SCHEME|-->>  LETTER
-UNSURE|-->>  En 099A
+COURSE_NAME|-->>  En 099A
 UNITS|-->>  1-0-8
 COURSE_TITLE|-->>  Senior Tutorial for English Majors
 SECTION|-->>  01
@@ -5632,45 +5631,45 @@ PROFESSOR_NAME|-->>  Hunter, C
 A|-->>  A
 A|-->>  A
 GRADE_SCHEME|-->>  LETTER
-UNSURE|-->>  En 116
+COURSE_NAME|-->>  En 116
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Milton
-UNSURE|-->>  Maximum enrollment: 15 students
+ANNOTATION|-->>  Maximum enrollment: 15 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Pigman, G
 DAY_TIME|-->>  TR 13:00 - 14:25
-COURSE_TITLE|-->>  TR DAB
+LOCATION_PART|-->>  TR DAB
 GRADE_SCHEME|-->>  LETTER
-UNSURE|-->>  En 123
+COURSE_NAME|-->>  En 123
 UNITS|-->>  3-0-6
-UNSURE|-->>  The 19th-Century English Novel
-UNSURE|-->>  Maximum enrollment: 20 students
+COURSE_TITLE|-->>  The 19th-Century English Novel
+ANNOTATION|-->>  Maximum enrollment: 20 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Gilmore, D
 DAY_TIME|-->>  W 13:00 - 15:55
-COURSE_TITLE|-->>  TR DAB
+LOCATION_PART|-->>  TR DAB
 GRADE_SCHEME|-->>  LETTER
-UNSURE|-->>  En 132
+COURSE_NAME|-->>  En 132
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  American Literature Until the Civil War
-UNSURE|-->>  Maximum enrollment: 15 students
+ANNOTATION|-->>  Maximum enrollment: 15 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Spires, D
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  19 BAX
 GRADE_SCHEME|-->>  LETTER
-UNSURE|-->>  En 141
+COURSE_NAME|-->>  En 141
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  James and Wharton
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Jurca, C
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  115 DAB
-COURSE_TITLE|-->>  
-UNSURE|-->>  En 189
+BLANK_LINE|-->>  
+COURSE_NAME|-->>  En 189
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Literature and Law in Medieval England
-UNSURE|-->>  Maximum enrollment: 20 students
+ANNOTATION|-->>  Maximum enrollment: 20 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Jahner, J
 DAY_TIME|-->>  TR 10:30 - 11:55
@@ -5733,20 +5732,20 @@ A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  ESE101
 UNITS|-->>  3-0-6
-UNSURE|-->>  Earth's Atmosphere
+COURSE_TITLE|-->>  Earth's Atmosphere
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ingersoll, A
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  162 SMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ESE102
 UNITS|-->>  3-0-6
-UNSURE|-->>  Earth's Oceans
+COURSE_TITLE|-->>  Earth's Oceans
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Adkins, J
 DAY_TIME|-->>  MWF 13:00 - 13:55
 LOCATION|-->>  215 NMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ESE104
 UNITS|-->>  1-0-0
 COURSE_TITLE|-->>  Current Problems in Environmental Science and Engineering
@@ -5863,7 +5862,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Bordoni, S
 DAY_TIME|-->>  MWF 14:00 - 14:55
 LOCATION|-->>  162 SMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ESE/Bi 166
 UNITS|-->>  3-1-5
 COURSE_TITLE|-->>  Microbial Physiology
@@ -5871,16 +5870,16 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Leadbetter, J
 DAY_TIME|-->>  MWF 10:00 - 10:55
 LOCATION|-->>  162 SMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ESE/Ge/Ch 172
 UNITS|-->>  3-0-0
 COURSE_TITLE|-->>  Atmospheric Chemistry II
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wennberg, P / Seinfeld, J
-UNSURE|-->>  OM,M 09:00 -
+TIME_START|-->>  OM,M 09:00 -
 LOCATION|-->>  135 L+R
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  09:55
+TIME_END|-->>  09:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  ESE300
 UNITS|-->>  +
@@ -5970,25 +5969,25 @@ UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to French Cinema from Its Beginning to the Present
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Orcel, C
-UNSURE|-->>  OM,M 14:00 -
+TIME_START|-->>  OM,M 14:00 -
 LOCATION|-->>  228 BAX
-COURSE_TITLE|-->>  
-TIME_PART|-->>  14:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  14:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  FS/Ph 004
 UNITS|-->>  2-0-4
-UNSURE|-->>  Freshman Seminar: Gravitational Waves
+COURSE_TITLE|-->>  Freshman Seminar: Gravitational Waves
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Weinstein, A
-UNSURE|-->>  OM,M 15:00 -
+TIME_START|-->>  OM,M 15:00 -
 LOCATION|-->>  107 DWN
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  15:55
+TIME_END|-->>  15:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  FS/Ph 009
 UNITS|-->>  2-0-4
-UNSURE|-->>  Freshman Seminar: The Science of Music
-UNSURE|-->>  Maximum enrollment: 11 students
+COURSE_TITLE|-->>  Freshman Seminar: The Science of Music
+ANNOTATION|-->>  Maximum enrollment: 11 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Politzer, H
 DAY_TIME|-->>  MW 13:00 - 13:55
@@ -5996,7 +5995,7 @@ LOCATION|-->>  248 LAU
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  FS/Ph 011A
 UNITS|-->>  2-0-4
-UNSURE|-->>  Freshman Seminar: Research Tutorial
+COURSE_TITLE|-->>  Freshman Seminar: Research Tutorial
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Tombrello, T
 A|-->>  A
@@ -6004,8 +6003,8 @@ LOCATION|-->>  201 SLN
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  FS/Bi/Ph 013
 UNITS|-->>  2-0-4
-UNSURE|-->>  Freshman Seminar: In Search of Memory
-UNSURE|-->>  Maximum enrollment: 13 students
+COURSE_TITLE|-->>  Freshman Seminar: In Search of Memory
+ANNOTATION|-->>  Maximum enrollment: 13 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Pine, J
 DAY_TIME|-->>  T 14:00 - 15:55
@@ -6013,17 +6012,17 @@ LOCATION|-->>  248 LAU
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  FS/Ph 014
 UNITS|-->>  2-0-4
-UNSURE|-->>  Freshman Seminar: Albatrosses, Beetles and Cetaceans
+COURSE_TITLE|-->>  Freshman Seminar: Albatrosses, Beetles and Cetaceans
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Stevenson, D
-UNSURE|-->>  OM,M 01:00 -
+TIME_START|-->>  OM,M 01:00 -
 LOCATION|-->>  176 SMD
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  01:55
+TIME_END|-->>  01:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  FS/Ge 016
 UNITS|-->>  2-0-4
-UNSURE|-->>  Freshman Seminar: Earthquakes
+COURSE_TITLE|-->>  Freshman Seminar: Earthquakes
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Stock, J
 DAY_TIME|-->>  T 14:00 - 15:55
@@ -6031,16 +6030,16 @@ LOCATION|-->>  215 NMD
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Ge 011A
 UNITS|-->>  3-3-3
-UNSURE|-->>  Introduction to Earth and Planetary Sciences: Earth as a Planet
+COURSE_TITLE|-->>  Introduction to Earth and Planetary Sciences: Earth as a Planet
 ANNOTATION|-->>  Field Trip Dates: Oct. 19, Nov. 2, Nov. 16
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Saleeby, J
 DAY_TIME|-->>  MWF 14:00 - 14:55
 LOCATION|-->>  215 NMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  FS/Ge 016
 UNITS|-->>  2-0-4
-UNSURE|-->>  Freshman Seminar: Earthquakes
+COURSE_TITLE|-->>  Freshman Seminar: Earthquakes
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Stock, J
 DAY_TIME|-->>  T 14:00 - 15:55
@@ -6086,7 +6085,7 @@ A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Ge 041A
 UNITS|-->>  +
-UNSURE|-->>  Undergraduate Research and Bachelor's Thesis
+COURSE_TITLE|-->>  Undergraduate Research and Bachelor's Thesis
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Orphan, V
 A|-->>  A
@@ -6135,12 +6134,12 @@ GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Ge 101
 UNITS|-->>  4-0-8
 COURSE_TITLE|-->>  Introduction to Geology and Geochemistry
-UNSURE|-->>  Field Trip: Friday, Nov. 1 through Sunday, Nov. 3
+ANNOTATION|-->>  Field Trip: Friday, Nov. 1 through Sunday, Nov. 3
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wernicke, B
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  215 NMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge 104
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to Geobiology
@@ -6148,7 +6147,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Fischer, W
 DAY_TIME|-->>  MW 08:30 - 09:55
 LOCATION|-->>  267 ARM
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge 108
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Applications of Physics to the Earth Sciences
@@ -6156,7 +6155,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Brown, M
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  162 SMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge 110
 UNITS|-->>  0-3-0
 COURSE_TITLE|-->>  Geographic Information System for Geology and Planetary Sciences
@@ -6164,20 +6163,20 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Avouac, J
 DAY_TIME|-->>  M 14:00 - 14:55
 LOCATION|-->>  309 NMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 13:00 - 14:25
 LOCATION|-->>  309 NMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge 112
 UNITS|-->>  3-5-4
 COURSE_TITLE|-->>  Sedimentology and Stratigraphy
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Dromart, G
-UNSURE|-->>  OM,M 09:00 -
+TIME_START|-->>  OM,M 09:00 -
 LOCATION|-->>  251 ARM
-COURSE_TITLE|-->>  
-TIME_PART|-->>  09:25
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  09:25
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge 114A
 UNITS|-->>  3-4-2
 COURSE_TITLE|-->>  Mineralogy
@@ -6185,10 +6184,10 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Rossman, G
 DAY_TIME|-->>  MTR 15:00 - 15:55
 LOCATION|-->>  251 ARM
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  TR 16:00 - 17:55
 LOCATION|-->>  251 ARM
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge 114B
 UNITS|-->>  0-2-1
 COURSE_TITLE|-->>  Mineralogy Laboratory
@@ -6196,7 +6195,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Rossman, G
 DAY_TIME|-->>  W 14:00 - 15:55
 LOCATION|-->>  267 ARM
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge 121A
 UNITS|-->>  0-9-3
 COURSE_TITLE|-->>  Advanced Field Geology
@@ -6205,17 +6204,17 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Lamb, M
 DAY_TIME|-->>  OM,T 17:00 - 18:55
 LOCATION|-->>  267 ARM
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge/Ch 127
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Nuclear Chemistry
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Burnett, D
-UNSURE|-->>  OM,M 17:10 -
+TIME_START|-->>  OM,M 17:10 -
 LOCATION|-->>  015 NMD
-COURSE_TITLE|-->>  
-TIME_PART|-->>  17:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  17:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge/Ay 133
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  The Formation and Evolution of Planetary Systems
@@ -6223,35 +6222,35 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Knutson, H
 DAY_TIME|-->>  MWF 14:00 - 14:55
 LOCATION|-->>  176 SMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge 136A
 UNITS|-->>  1-0-2
 COURSE_TITLE|-->>  Regional Field Geology of the Southwestern United States
 ANNOTATION|-->>  Field Trip Dates: TBD
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Kirschvink, J
-UNSURE|-->>  OM,R 10:00 -
+TIME_START|-->>  OM,R 10:00 -
 LOCATION|-->>  251 ARM
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  10:25
+TIME_END|-->>  10:25
 GRADE_SCHEME|-->>  PASS-FAIL
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Stock, J
-UNSURE|-->>  OM,M 09:30 -
+TIME_START|-->>  OM,M 09:30 -
 LOCATION|-->>  251 ARM
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  09:55
+TIME_END|-->>  09:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Ge 145
 UNITS|-->>  1-4-4
 COURSE_TITLE|-->>  Isotope-Ratio Mass Spectrometry
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Sessions, A
-UNSURE|-->>  OM,M 13:30 -
+TIME_START|-->>  OM,M 13:30 -
 LOCATION|-->>  251 ARM
-COURSE_TITLE|-->>  
-TIME_PART|-->>  13:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  13:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge 151
 UNITS|-->>  3-3-3
 COURSE_TITLE|-->>  Fundamentals of Planetary Surfaces
@@ -6259,7 +6258,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ehlmann, B
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  267 ARM
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ae/Ge/ME 160A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Continuum Mechanics of Fluids and Solids
@@ -6276,7 +6275,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Stock, J
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  215 NMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge 167
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Tectonic Geodesy
@@ -6284,16 +6283,16 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Simons, M
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  162 SMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ESE/Ge/Ch 172
 UNITS|-->>  3-0-0
 COURSE_TITLE|-->>  Atmospheric Chemistry II
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wennberg, P / Seinfeld, J
-UNSURE|-->>  OM,M 09:00 -
+TIME_START|-->>  OM,M 09:00 -
 LOCATION|-->>  135 L+R
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  09:55
+TIME_END|-->>  09:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Bi/Ge 180
 UNITS|-->>  2-6-1
@@ -6313,7 +6312,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Brown, M
 DAY_TIME|-->>  W 12:00 - 12:55
 LOCATION|-->>  162 SMD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge 212
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Thermodynamics of Geological Systems
@@ -6321,7 +6320,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Asimow, P
 DAY_TIME|-->>  MWF 10:00 - 10:55
 LOCATION|-->>  267 ARM
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ge 297
 UNITS|-->>  +
 COURSE_TITLE|-->>  Advanced Study
@@ -6676,7 +6675,7 @@ GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Hum/H 002
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  American History
-UNSURE|-->>  Maximum enrollment: 15 students per section//Class closed to  continuing students until term start.
+ANNOTATION|-->>  Maximum enrollment: 15 students per section//Class closed to  continuing students until term start.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Kousser, J
 DAY_TIME|-->>  TR 14:30 - 15:55
@@ -6692,22 +6691,22 @@ LOCATION|-->>  127 BAX
 GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  Hum/H 003B
 UNITS|-->>  3-0-6
-UNSURE|-->>  European Civilization: Early Modern Europe
-UNSURE|-->>  Maximum enrollment: 15 students//Class closed to continuing  students until term start
+COURSE_TITLE|-->>  European Civilization: Early Modern Europe
+ANNOTATION|-->>  Maximum enrollment: 15 students//Class closed to continuing  students until term start
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wey-Gomez, N
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  117 DAB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Hum/H 003C
 UNITS|-->>  3-0-6
-UNSURE|-->>  European Civilization:  Modern Europe
-UNSURE|-->>  Maximum enrollment: 15 students//Class closed to continuing  students until term start.
+COURSE_TITLE|-->>  European Civilization:  Modern Europe
+ANNOTATION|-->>  Maximum enrollment: 15 students//Class closed to continuing  students until term start.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Dennison, T
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  117 DAB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  H  098
 UNITS|-->>  +
 COURSE_TITLE|-->>  Reading in History
@@ -6723,37 +6722,37 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Hoffman, P
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Brown, W
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  03
 PROFESSOR_NAME|-->>  Kiewiet, D
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  04
 PROFESSOR_NAME|-->>  Dennison, T
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  05
 PROFESSOR_NAME|-->>  Brewer, J
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  06
 PROFESSOR_NAME|-->>  Buchwald, J
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  07
 PROFESSOR_NAME|-->>  Wey-Gomez, N
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  H/An 123
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Anthropological Demography
@@ -6766,7 +6765,7 @@ GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  Art/H 153
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  West Coast Art since the Sixties
-UNSURE|-->>  Maximum enrollment: 15 students
+ANNOTATION|-->>  Maximum enrollment: 15 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Robbins, C
 DAY_TIME|-->>  TR 10:30 - 11:55
@@ -6774,17 +6773,17 @@ LOCATION|-->>  117 DAB
 GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  H/HPS 185
 UNITS|-->>  3-0-6
-UNSURE|-->>  Angels and Monsters: Cosmology, Anthropology, and the Ends of the World
-UNSURE|-->>  Maximum enrollment: 20 students
+COURSE_TITLE|-->>  Angels and Monsters: Cosmology, Anthropology, and the Ends of the World
+ANNOTATION|-->>  Maximum enrollment: 20 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wey-Gomez, N
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  127 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  H/L 191
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Perspectives on History through German Literature
-UNSURE|-->>  Maximum enrollment: 15 students
+ANNOTATION|-->>  Maximum enrollment: 15 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Dennison, T
 DAY_TIME|-->>  TR 10:30 - 11:55
@@ -6809,34 +6808,34 @@ GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  HPS/Pl 120
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to Philosophy of Science
-UNSURE|-->>  Maximum enrollment: 25 students
+ANNOTATION|-->>  Maximum enrollment: 25 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Hitchcock, C
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  125 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  HPS/Pl 124
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Philosophy of Space and Time
-UNSURE|-->>  Maximum enrollment: 25 students
+ANNOTATION|-->>  Maximum enrollment: 25 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Hitchcock, C
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  125 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  H/HPS 185
 UNITS|-->>  3-0-6
-UNSURE|-->>  Angels and Monsters: Cosmology, Anthropology, and the Ends of the World
-UNSURE|-->>  Maximum enrollment: 20 students
+COURSE_TITLE|-->>  Angels and Monsters: Cosmology, Anthropology, and the Ends of the World
+ANNOTATION|-->>  Maximum enrollment: 20 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wey-Gomez, N
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  127 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Hum/H 002
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  American History
-UNSURE|-->>  Maximum enrollment: 15 students per section//Class closed to  continuing students until term start.
+ANNOTATION|-->>  Maximum enrollment: 15 students per section//Class closed to  continuing students until term start.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Kousser, J
 DAY_TIME|-->>  TR 14:30 - 15:55
@@ -6852,130 +6851,130 @@ LOCATION|-->>  127 BAX
 GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  Hum/H 003B
 UNITS|-->>  3-0-6
-UNSURE|-->>  European Civilization: Early Modern Europe
-UNSURE|-->>  Maximum enrollment: 15 students//Class closed to continuing  students until term start
+COURSE_TITLE|-->>  European Civilization: Early Modern Europe
+ANNOTATION|-->>  Maximum enrollment: 15 students//Class closed to continuing  students until term start
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wey-Gomez, N
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  117 DAB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Hum/H 003C
 UNITS|-->>  3-0-6
-UNSURE|-->>  European Civilization:  Modern Europe
-UNSURE|-->>  Maximum enrollment: 15 students//Class closed to continuing  students until term start.
+COURSE_TITLE|-->>  European Civilization:  Modern Europe
+ANNOTATION|-->>  Maximum enrollment: 15 students//Class closed to continuing  students until term start.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Dennison, T
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  117 DAB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Hum/En 005
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Major British Authors
-UNSURE|-->>  Maximum enrollment: 15 students//Class closed to continuing  students until term start.
+ANNOTATION|-->>  Maximum enrollment: 15 students//Class closed to continuing  students until term start.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Jahner, J
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  115 DAB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Pigman, G
 DAY_TIME|-->>  TR 14:30 - 15:55
-COURSE_TITLE|-->>  TR DAB
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  TR DAB
+BLANK_LINE|-->>  
 SECTION|-->>  03
 PROFESSOR_NAME|-->>  Gilmore, D
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  19 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  04
 PROFESSOR_NAME|-->>  Haugen, K
 DAY_TIME|-->>  T 19:00 - 21:55
 LOCATION|-->>  115 DAB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  05
 PROFESSOR_NAME|-->>  Haugen, K
 DAY_TIME|-->>  W 19:00 - 21:55
 LOCATION|-->>  115 DAB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Hum/En 006
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  American Literature and Culture
-UNSURE|-->>  Maximum Enrollment: 15 students // Class closed to continuing  students until term start.
+ANNOTATION|-->>  Maximum Enrollment: 15 students // Class closed to continuing  students until term start.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Jurca, C
 DAY_TIME|-->>  W 13:00 - 15:55
 LOCATION|-->>  33 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Hum/Pl 008
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Right and Wrong
-UNSURE|-->>  Maximum enrollment: 15 students per section//Class closed to  continuing students until term start.
+ANNOTATION|-->>  Maximum enrollment: 15 students per section//Class closed to  continuing students until term start.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Quartz, S
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  128 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Quartz, S
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  128 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Hum/Pl 009
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Knowledge and Reality
-UNSURE|-->>  Maximum enrollment: 15 students per section//Class closed to  continuing students until term start.
+ANNOTATION|-->>  Maximum enrollment: 15 students per section//Class closed to  continuing students until term start.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Eberhardt, F
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  33 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Eberhardt, F
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  3 BBB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  L  102A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Elementary French
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Orcel, C
-UNSURE|-->>  OM,M 13:00 -
+TIME_START|-->>  OM,M 13:00 -
 LOCATION|-->>  228 BAX
-COURSE_TITLE|-->>  
-TIME_PART|-->>  13:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  13:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  L  103A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Intermediate French
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Merrill, T
-UNSURE|-->>  OM,M 14:00 -
+TIME_START|-->>  OM,M 14:00 -
 LOCATION|-->>  117 DAB
-COURSE_TITLE|-->>  
-TIME_PART|-->>  14:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  14:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  L  106A
 UNITS|-->>  5-0-4
 COURSE_TITLE|-->>  Elementary Japanese
 ANNOTATION|-->>  Taught by Dr. Hirai//Maximum Enrollment: 20 students per section
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Toner, R
-UNSURE|-->>  MTWR 15:00 -
+TIME_START|-->>  MTWR 15:00 -
 COURSE_TITLE|-->>  MRG LIB KRK
-COURSE_TITLE|-->>  
-TIME_PART|-->>  15:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  15:55
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Toner, R
-UNSURE|-->>  MTWR 16:00 -
+TIME_START|-->>  MTWR 16:00 -
 COURSE_TITLE|-->>  MRG LIB KRK
-COURSE_TITLE|-->>  
-TIME_PART|-->>  16:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  16:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  L  107A
 UNITS|-->>  5-1-4
 COURSE_TITLE|-->>  Intermediate Japanese
-UNSURE|-->>  Maximum Enrollment: 20 students
+ANNOTATION|-->>  Maximum Enrollment: 20 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Hirata, K
 DAY_TIME|-->>  TWR 12:00 - 12:55
@@ -6984,24 +6983,24 @@ GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  L  108A
 UNITS|-->>  3-1-6
 COURSE_TITLE|-->>  Advanced Japanese
-UNSURE|-->>  Maximum Enrollment: 20 students
+ANNOTATION|-->>  Maximum Enrollment: 20 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Hirata, K
-UNSURE|-->>  OM,M 16:00 -
+TIME_START|-->>  OM,M 16:00 -
 LOCATION|-->>  128 BAX
 GRADE_SCHEME|-->>  LETTER
-TIME_PART|-->>  16:55
+TIME_END|-->>  16:55
 GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  L/F 109
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to French Cinema from Its Beginning to the Present
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Orcel, C
-UNSURE|-->>  OM,M 14:00 -
+TIME_START|-->>  OM,M 14:00 -
 LOCATION|-->>  228 BAX
-COURSE_TITLE|-->>  
-TIME_PART|-->>  14:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  14:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  L  110A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Elementary Spanish
@@ -7010,35 +7009,35 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Garcia, D
 DAY_TIME|-->>  MWR 12:00 - 12:55
 LOCATION|-->>  115 DAB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Arjona, G
-UNSURE|-->>  OM,M 16:00 -
+TIME_START|-->>  OM,M 16:00 -
 LOCATION|-->>  228 BAX
-COURSE_TITLE|-->>  
-TIME_PART|-->>  16:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  16:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  L  112A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Intermediate Spanish
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Garcia, D
-UNSURE|-->>  OM,M 17:00 -
+TIME_START|-->>  OM,M 17:00 -
 LOCATION|-->>  128 BAX
-COURSE_TITLE|-->>  
-TIME_PART|-->>  17:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  17:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  L  114A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Spanish and Latin American Literature
-UNSURE|-->>  Maximum enrollment: 20 students
+ANNOTATION|-->>  Maximum enrollment: 20 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Arjona, G
-UNSURE|-->>  OM,M 17:00 -
+TIME_START|-->>  OM,M 17:00 -
 LOCATION|-->>  228 BAX
-COURSE_TITLE|-->>  
-TIME_PART|-->>  17:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  17:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  L  130A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Elementary German
@@ -7046,7 +7045,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Aebi, A
 DAY_TIME|-->>  MWR 13:00 - 13:55
 LOCATION|-->>  117 DAB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  L  132A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Intermediate German
@@ -7054,16 +7053,16 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Aebi, A
 DAY_TIME|-->>  MWR 12:00 - 12:55
 LOCATION|-->>  117 DAB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  L  170A
 UNITS|-->>  4-1-5
 COURSE_TITLE|-->>  Introduction to Chinese
-UNSURE|-->>  Maximum Enrollment: 20 students
+ANNOTATION|-->>  Maximum Enrollment: 20 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wang, X
 DAY_TIME|-->>  MW 19:00 - 20:25
 LOCATION|-->>  125 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  L  171A
 UNITS|-->>  5-0-4
 COURSE_TITLE|-->>  Elementary Chinese
@@ -7071,16 +7070,16 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ming, F
 DAY_TIME|-->>  MTW 19:00 - 19:55
 LOCATION|-->>  128 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  L  172A
 UNITS|-->>  4-1-5
 COURSE_TITLE|-->>  Intermediate Chinese
-UNSURE|-->>  Maximum Enrollment: 20 students
+ANNOTATION|-->>  Maximum Enrollment: 20 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wang, X
 DAY_TIME|-->>  TR 19:00 - 20:25
 LOCATION|-->>  125 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  L  173A
 UNITS|-->>  3-1-6
 COURSE_TITLE|-->>  Advanced Chinese
@@ -7088,11 +7087,11 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ming, F
 DAY_TIME|-->>  MT 20:00 - 21:25
 LOCATION|-->>  128 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  H/L 191
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Perspectives on History through German Literature
-UNSURE|-->>  Maximum enrollment: 15 students
+ANNOTATION|-->>  Maximum enrollment: 15 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Dennison, T
 DAY_TIME|-->>  TR 10:30 - 11:55
@@ -7106,7 +7105,7 @@ SECTION|-->>  01
 COURSE_TITLE|-->>  Staff
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  MS 078A
 UNITS|-->>  +
 COURSE_TITLE|-->>  Senior Thesis
@@ -7114,22 +7113,22 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Johnson, W
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Haile, S
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  03
 PROFESSOR_NAME|-->>  Greer, J
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  04
 PROFESSOR_NAME|-->>  Snyder, G
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  MS 100
 UNITS|-->>  +
 COURSE_TITLE|-->>  Advanced Work in Materials Science
@@ -7176,7 +7175,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Shapiro-Scharlotta, A
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  080 MRE
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  MS/APh 120
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Diffraction and Structure
@@ -7184,16 +7183,16 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Fultz, B
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  104 WAT
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  MS/APh 122
 UNITS|-->>  0-3-0
 COURSE_TITLE|-->>  Diffraction, Imaging, and Structure
-UNSURE|-->>  Maximum enrollment: 8 students
+ANNOTATION|-->>  Maximum enrollment: 8 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Fultz, B / Garland, C
 DAY_TIME|-->>  OM,T 13:00 - 13:55
 LOCATION|-->>  042 KCK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  MS 200
 UNITS|-->>  +
 COURSE_TITLE|-->>  Advanced Work in Materials Science
@@ -7294,7 +7293,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Gdoutos, E
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  MS 300
 UNITS|-->>  +
 COURSE_TITLE|-->>  Thesis Research
@@ -7368,10 +7367,10 @@ UNITS|-->>  4-0-5
 COURSE_TITLE|-->>  Calculus of One and Several Variables and Linear Algebra
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Marx, C
-UNSURE|-->>  MTWF 10:00 -
+TIME_START|-->>  MTWF 10:00 -
 LOCATION|-->>  151 SLN
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  10:55
+TIME_END|-->>  10:55
 GRADE_SCHEME|-->>  PASS-FAIL
 DAY_TIME|-->>  R 19:30 - 20:55
 LOCATION|-->>  151 SLN
@@ -7573,7 +7572,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Flach, M
 DAY_TIME|-->>  MWF 09:00 - 09:55
 LOCATION|-->>  151 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma/CS 006A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to Discrete Mathematics
@@ -7581,7 +7580,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wilson, R
 DAY_TIME|-->>  MWF 13:00 - 13:55
 LOCATION|-->>  151 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 008
 UNITS|-->>  3-0-0
 COURSE_TITLE|-->>  Problem Solving in Calculus
@@ -7589,7 +7588,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Katz, N
 DAY_TIME|-->>  TR 19:30 - 20:55
 LOCATION|-->>  151 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 010
 UNITS|-->>  2-0-1
 COURSE_TITLE|-->>  Oral Presentation
@@ -7630,7 +7629,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Flach, M
 DAY_TIME|-->>  MWF 09:00 - 09:55
 LOCATION|-->>  151 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 108A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Classical Analysis
@@ -7638,7 +7637,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Frank, R
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  151 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 109A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to Geometry and Topology
@@ -7646,7 +7645,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Baba, S
 DAY_TIME|-->>  MWF 09:00 - 09:55
 LOCATION|-->>  153 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 110A
 UNITS|-->>  3-0-6
 PROFESSOR_NAME|-->>  Analysis, I
@@ -7654,7 +7653,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Makarov, N
 DAY_TIME|-->>  MWF 11:00 - 11:55
 LOCATION|-->>  159 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 111A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Analysis, II
@@ -7662,7 +7661,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ormerod, C
 DAY_TIME|-->>  MWF 13:00 - 13:55
 LOCATION|-->>  257 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 116A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Mathematical Logic and Axiomatic Set Theory
@@ -7670,7 +7669,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Williams, J
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  151 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 120A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Abstract Algebra
@@ -7678,7 +7677,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Graber, T
 DAY_TIME|-->>  MWF 09:00 - 09:55
 LOCATION|-->>  257 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 121A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Combinatorial Analysis
@@ -7686,7 +7685,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Rains, E
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  159 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  EE/Ma/CS 126A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Information Theory
@@ -7702,7 +7701,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Graber, T
 DAY_TIME|-->>  MWF 13:00 - 13:55
 LOCATION|-->>  153 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma/ACM 142
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Ordinary and Partial Differential Equations
@@ -7710,7 +7709,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Frank, R
 DAY_TIME|-->>  MWF 10:00 - 10:55
 LOCATION|-->>  159 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma/ACM 144A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Probability
@@ -7718,7 +7717,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Alberts, T
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  153 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 145A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to Unitary Group Representations
@@ -7726,7 +7725,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Chipeniuk, K
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  153 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 148A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Topics in Mathematical Physics
@@ -7734,7 +7733,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Demirel-Frank, S
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  257 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 151A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Algebraic and Differential Topology
@@ -7742,7 +7741,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Liu, Y
 DAY_TIME|-->>  MWF 10:00 - 10:55
 LOCATION|-->>  153 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 157A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Riemannian Geometry
@@ -7750,7 +7749,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Gupta, S
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  257 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 160A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Number Theory
@@ -7758,7 +7757,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Flach, M
 DAY_TIME|-->>  MWF 14:00 - 14:55
 LOCATION|-->>  257 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 191A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Selected Topics in Mathematics
@@ -7767,22 +7766,22 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Marks, A
 DAY_TIME|-->>  MW 13:00 - 14:25
 LOCATION|-->>  159 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Liu, Y
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  03
 PROFESSOR_NAME|-->>  Baba, S
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  04
 PROFESSOR_NAME|-->>  Zhou, G
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  257 SLN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  SS/Ma 214
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Mathematical Finance
@@ -7790,7 +7789,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Cvitanic, J
 DAY_TIME|-->>  TR 17:00 - 18:25
 LOCATION|-->>  125 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ma 290
 UNITS|-->>  +
 COURSE_TITLE|-->>  Reading
@@ -7987,7 +7986,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ortiz, M
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  101 GUG
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ME 066
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Vibration
@@ -8043,7 +8042,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Colonius, T
 DAY_TIME|-->>  MWF 10:00 - 10:55
 LOCATION|-->>  101 GUG
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ae/AM/CE/ME  102A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Mechanics of Structures and Solids
@@ -8060,15 +8059,15 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Pickar, K
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  206 TOM
-COURSE_TITLE|-->>  
-UNSURE|-->>  EST/EE/ME 109
+BLANK_LINE|-->>  
+COURSE_NAME|-->>  EST/EE/ME 109
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Energy Technology and Policy
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Rutledge, D
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  106 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ME 110
 UNITS|-->>  +
 COURSE_TITLE|-->>  Special Laboratory Work in Mechanical Engineering
@@ -8118,7 +8117,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Gdoutos, E
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  ME 300
 UNITS|-->>  +
 COURSE_TITLE|-->>  Research in Mechanical Engineering
@@ -8282,68 +8281,68 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Neenan, T
 DAY_TIME|-->>  MW 14:30 - 15:55
 LOCATION|-->>  19 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Mu 027
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Fundamentals of Music Theory and Elementary Ear Training
-UNSURE|-->>  Maximum enrollment: 15 students
+ANNOTATION|-->>  Maximum enrollment: 15 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Neenan, T
 DAY_TIME|-->>  MW 11:00 - 12:25
 LOCATION|-->>  19 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Bi/CNS/NB 150
 UNITS|-->>  4-0-6
 COURSE_TITLE|-->>  Introduction to Neuroscience
-UNSURE|-->>  Maximum enrollment: 15 students per section
+ANNOTATION|-->>  Maximum enrollment: 15 students per section
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Lester, H / Adolphs, R
 DAY_TIME|-->>  MWF 11:00 - 11:55
-UNSURE|-->>  100 - Rock
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  100 - Rock
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  Auditorium
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 13:30 - 14:25
 LOCATION|-->>  101 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Lester, H / Adolphs, R
 DAY_TIME|-->>  MWF 11:00 - 11:55
-UNSURE|-->>  100 - Rock
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  100 - Rock
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  Auditorium
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 15:00 - 15:55
 LOCATION|-->>  101 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  03
 PROFESSOR_NAME|-->>  Lester, H / Adolphs, R
 DAY_TIME|-->>  MWF 11:00 - 11:55
-UNSURE|-->>  100 - Rock
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  100 - Rock
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  Auditorium
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 19:00 - 19:55
 LOCATION|-->>  101 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  04
 PROFESSOR_NAME|-->>  Lester, H / Adolphs, R
 DAY_TIME|-->>  MWF 11:00 - 11:55
-UNSURE|-->>  100 - Rock
-COURSE_TITLE|-->>  
+LOCATION_PART|-->>  100 - Rock
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  Auditorium
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 DAY_TIME|-->>  R 20:00 - 20:55
 LOCATION|-->>  101 KRK
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  CNS/Bi/Ph/CS/N B 187
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Neural Computation
@@ -8351,7 +8350,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Perona, P
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  080 MRE
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Bi/CNS/NB 216
 UNITS|-->>  2-0-4
 COURSE_TITLE|-->>  Behavior of Mammals
@@ -8359,7 +8358,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Allman, J
 COURSE_NAME|-->>  F 14:00 - 15:55
 LOCATION|-->>  200 BRD
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  PA 016A
 UNITS|-->>  0-3-0
 COURSE_TITLE|-->>  Cooking Basics
@@ -8451,7 +8450,7 @@ LOCATION_PART|-->>  BAX
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  PA 035A
 UNITS|-->>  0-3-0
-UNSURE|-->>  Women's Glee Club
+COURSE_TITLE|-->>  Women's Glee Club
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Sulahian, N
 DAY_TIME|-->>  M 19:30 - 21:25
@@ -8466,7 +8465,7 @@ LOCATION_PART|-->>  BCK
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  PA 036A
 UNITS|-->>  0-3-0
-UNSURE|-->>  Men's Glee Club
+COURSE_TITLE|-->>  Men's Glee Club
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Sulahian, N
 DAY_TIME|-->>  M 19:30 - 21:25
@@ -8533,39 +8532,39 @@ A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Weinstein, C
-UNSURE|-->>  OM,M 19:00 -
+TIME_START|-->>  OM,M 19:00 -
 A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  19:55
+TIME_END|-->>  19:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Hum/Pl 008
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Right and Wrong
-UNSURE|-->>  Maximum enrollment: 15 students per section//Class closed to  continuing students until term start.
+ANNOTATION|-->>  Maximum enrollment: 15 students per section//Class closed to  continuing students until term start.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Quartz, S
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  128 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Quartz, S
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  128 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Hum/Pl 009
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Knowledge and Reality
-UNSURE|-->>  Maximum enrollment: 15 students per section//Class closed to  continuing students until term start.
+ANNOTATION|-->>  Maximum enrollment: 15 students per section//Class closed to  continuing students until term start.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Eberhardt, F
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  33 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 SECTION|-->>  02
 PROFESSOR_NAME|-->>  Eberhardt, F
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  3 BBB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Pl 090A
 UNITS|-->>  1-0-8
 COURSE_TITLE|-->>  Senior Thesis
@@ -8585,30 +8584,30 @@ GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  HPS/Pl 120
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Introduction to Philosophy of Science
-UNSURE|-->>  Maximum enrollment: 25 students
+ANNOTATION|-->>  Maximum enrollment: 25 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Hitchcock, C
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  125 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  HPS/Pl 124
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Philosophy of Space and Time
-UNSURE|-->>  Maximum enrollment: 25 students
+ANNOTATION|-->>  Maximum enrollment: 25 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Hitchcock, C
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  125 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Pl 151
 UNITS|-->>  3-0-6
-UNSURE|-->>  18th-Century Philosophy: Locke to Kant
-UNSURE|-->>  Maximum enrollment: 15 students
+COURSE_TITLE|-->>  18th-Century Philosophy: Locke to Kant
+ANNOTATION|-->>  Maximum enrollment: 15 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Manning, G
 DAY_TIME|-->>  R 13:00 - 15:55
 LOCATION|-->>  33 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  PE 001
 UNITS|-->>  3-0-0
 COURSE_TITLE|-->>  Student Designed Fitness
@@ -8711,7 +8710,7 @@ LOCATION|-->>  POOL BAC
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  PE 044
 UNITS|-->>  3-0-0
-UNSURE|-->>  Karate (Shotokan), Beginning and Intermediate/Advanced
+COURSE_TITLE|-->>  Karate (Shotokan), Beginning and Intermediate/Advanced
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Teramoto, K
 DAY_TIME|-->>  TR 16:00 - 17:25
@@ -8762,13 +8761,13 @@ LOCATION|-->>  BAC
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  PE 083A
 UNITS|-->>  3-0-0
-UNSURE|-->>  Intercollegiate Basketball Team (Women)
+COURSE_TITLE|-->>  Intercollegiate Basketball Team (Women)
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Marbut, S
-UNSURE|-->>  MTWRFS 16:00 -
+TIME_START|-->>  MTWRFS 16:00 -
 LOCATION|-->>  BAC
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  17:55
+TIME_END|-->>  17:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  PE 084
 UNITS|-->>  3-0-0
@@ -8780,17 +8779,17 @@ LOCATION|-->>  BRW
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  PE 087A
 UNITS|-->>  3-0-0
-UNSURE|-->>  Intercollegiate Swimming Team (Men and Women)
+COURSE_TITLE|-->>  Intercollegiate Swimming Team (Men and Women)
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Leavitt, J
-UNSURE|-->>  MTWRFS 16:00 -
+TIME_START|-->>  MTWRFS 16:00 -
 LOCATION|-->>  POOL BAC
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  17:55
+TIME_END|-->>  17:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  PE 089A
 UNITS|-->>  3-0-0
-UNSURE|-->>  Intercollegiate Fencing Team (Men and Women)
+COURSE_TITLE|-->>  Intercollegiate Fencing Team (Men and Women)
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Corbit, C
 DAY_TIME|-->>  TR 20:00 - 21:55
@@ -8798,53 +8797,53 @@ LOCATION|-->>  BRW
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  PE 090A
 UNITS|-->>  3-0-0
-UNSURE|-->>  Intercollegiate Water Polo Team (Men & Women)
+COURSE_TITLE|-->>  Intercollegiate Water Polo Team (Men & Women)
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Beemer, P
-UNSURE|-->>  MTWRFS 16:00 -
+TIME_START|-->>  MTWRFS 16:00 -
 LOCATION|-->>  POOL BAC
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  17:55
+TIME_END|-->>  17:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  PE 091A
 UNITS|-->>  3-0-0
-UNSURE|-->>  Intercollegiate Basketball Team (Men)
+COURSE_TITLE|-->>  Intercollegiate Basketball Team (Men)
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Eslinger, O
-UNSURE|-->>  MTWRFS 16:00 -
+TIME_START|-->>  MTWRFS 16:00 -
 LOCATION|-->>  BAC
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  17:55
+TIME_END|-->>  17:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  PE 092
 UNITS|-->>  3-0-0
-UNSURE|-->>  Intercollegiate Soccer Team (Men)
+COURSE_TITLE|-->>  Intercollegiate Soccer Team (Men)
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Uribe, R
-UNSURE|-->>  MTWRFS 16:00 -
+TIME_START|-->>  MTWRFS 16:00 -
 LOCATION|-->>  NOF BAC
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  17:55
+TIME_END|-->>  17:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  PE 097
 UNITS|-->>  3-0-0
-UNSURE|-->>  Intercollegiate Cross Country Team (Men and Women)
+COURSE_TITLE|-->>  Intercollegiate Cross Country Team (Men and Women)
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Jung, S
-UNSURE|-->>  MTWRFS 16:00 -
+TIME_START|-->>  MTWRFS 16:00 -
 LOCATION|-->>  TRK BAC
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  17:55
+TIME_END|-->>  17:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  PE 099
 UNITS|-->>  3-0-0
-UNSURE|-->>  Intercollegiate Volleyball Team (Women)
+COURSE_TITLE|-->>  Intercollegiate Volleyball Team (Women)
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Lindsay, J
-UNSURE|-->>  MTWRFS 16:00 -
+TIME_START|-->>  MTWRFS 16:00 -
 LOCATION|-->>  BAC
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  17:55
+TIME_END|-->>  17:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Ph 001A
 UNITS|-->>  4-0-5
@@ -8932,7 +8931,7 @@ GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Ph 002A
 UNITS|-->>  4-0-5
 COURSE_TITLE|-->>  Waves, Quantum Mechanics, and Statistical Physics
-UNSURE|-->>  Maximum enrollment: 35 students per section
+ANNOTATION|-->>  Maximum enrollment: 35 students per section
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Martin, C / Hsieh, D
 DAY_TIME|-->>  TR 11:00 - 11:55
@@ -8992,7 +8991,7 @@ GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  Ph 003
 UNITS|-->>  0-3-3
 COURSE_TITLE|-->>  Physics Laboratory
-UNSURE|-->>  Maximum enrollment: 16 students per section // Graded P/F; letter  grades by petition only
+ANNOTATION|-->>  Maximum enrollment: 16 students per section // Graded P/F; letter  grades by petition only
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Black, E / Libbrecht, K
 DAY_TIME|-->>  W 13:00 - 15:55
@@ -9010,13 +9009,13 @@ LOCATION|-->>  308 BRG
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  FS/Ph 004
 UNITS|-->>  2-0-4
-UNSURE|-->>  Freshman Seminar: Gravitational Waves
+COURSE_TITLE|-->>  Freshman Seminar: Gravitational Waves
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Weinstein, A
-UNSURE|-->>  OM,M 15:00 -
+TIME_START|-->>  OM,M 15:00 -
 LOCATION|-->>  107 DWN
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  15:55
+TIME_END|-->>  15:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Ph 005
 UNITS|-->>  0-5-4
@@ -9025,13 +9024,13 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Sannibale, V / Rice, F /
 DAY_TIME|-->>  OM,T 15:00 - 15:55
 LOCATION|-->>  201 BRG
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 PROFESSOR_NAME|-->>  Libbrecht, K
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  FS/Ph 009
 UNITS|-->>  2-0-4
-UNSURE|-->>  Freshman Seminar: The Science of Music
-UNSURE|-->>  Maximum enrollment: 11 students
+COURSE_TITLE|-->>  Freshman Seminar: The Science of Music
+ANNOTATION|-->>  Maximum enrollment: 11 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Politzer, H
 DAY_TIME|-->>  MW 13:00 - 13:55
@@ -9040,7 +9039,7 @@ GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Ph 010
 UNITS|-->>  2-0-1
 COURSE_TITLE|-->>  Frontiers in Physics
-UNSURE|-->>  Maximum enrollment: 33 students
+ANNOTATION|-->>  Maximum enrollment: 33 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Prince, T
 DAY_TIME|-->>  W 12:00 - 13:55
@@ -9048,7 +9047,7 @@ LOCATION|-->>  114 EBRG
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  FS/Ph 011A
 UNITS|-->>  2-0-4
-UNSURE|-->>  Freshman Seminar: Research Tutorial
+COURSE_TITLE|-->>  Freshman Seminar: Research Tutorial
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Tombrello, T
 A|-->>  A
@@ -9064,8 +9063,8 @@ LOCATION|-->>  269 LAU
 GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  FS/Bi/Ph 013
 UNITS|-->>  2-0-4
-UNSURE|-->>  Freshman Seminar: In Search of Memory
-UNSURE|-->>  Maximum enrollment: 13 students
+COURSE_TITLE|-->>  Freshman Seminar: In Search of Memory
+ANNOTATION|-->>  Maximum enrollment: 13 students
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Pine, J
 DAY_TIME|-->>  T 14:00 - 15:55
@@ -9073,34 +9072,34 @@ LOCATION|-->>  248 LAU
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  FS/Ph 014
 UNITS|-->>  2-0-4
-UNSURE|-->>  Freshman Seminar: Albatrosses, Beetles and Cetaceans
+COURSE_TITLE|-->>  Freshman Seminar: Albatrosses, Beetles and Cetaceans
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Stevenson, D
-UNSURE|-->>  OM,M 01:00 -
+TIME_START|-->>  OM,M 01:00 -
 LOCATION|-->>  176 SMD
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  01:55
+TIME_END|-->>  01:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Ph 020
 UNITS|-->>  0-6-0
 COURSE_TITLE|-->>  Computational Physics Laboratory I
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Mach, C / Prince, T
-UNSURE|-->>  OM,M 15:00 -
+TIME_START|-->>  OM,M 15:00 -
 LOCATION|-->>  304 BRG
 GRADE_SCHEME|-->>  PASS-FAIL
-TIME_PART|-->>  15:55
+TIME_END|-->>  15:55
 GRADE_SCHEME|-->>  PASS-FAIL
 COURSE_NAME|-->>  Ph 050A
 UNITS|-->>  1-0-3
 COURSE_TITLE|-->>  Caltech Physics League
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Refael, G
-UNSURE|-->>  OM,M 14:00 -
+TIME_START|-->>  OM,M 14:00 -
 LOCATION|-->>  114 EBRG
-COURSE_TITLE|-->>  
-TIME_PART|-->>  14:55
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
+TIME_END|-->>  14:55
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph 070
 UNITS|-->>  2-0-4
 COURSE_TITLE|-->>  Oral and Written Communication
@@ -9108,26 +9107,26 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Hitlin, D
 DAY_TIME|-->>  T 14:00 - 15:55
 LOCATION|-->>  469 LAU
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph 077A
 UNITS|-->>  0-5-4
 COURSE_TITLE|-->>  Advanced Physics Laboratory
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Black, E / Libbrecht, K
-UNSURE|-->>  OM,M 15:00 -
+TIME_START|-->>  OM,M 15:00 -
 LOCATION|-->>  210 BRG
 GRADE_SCHEME|-->>  LETTER
-TIME_PART|-->>  15:55
+TIME_END|-->>  15:55
 GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  Ph 077B
 UNITS|-->>  0-5-4
 COURSE_TITLE|-->>  Advanced Physics Laboratory
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Black, E / Libbrecht, K
-UNSURE|-->>  OM,M 15:00 -
+TIME_START|-->>  OM,M 15:00 -
 LOCATION|-->>  210 BRG
 GRADE_SCHEME|-->>  LETTER
-TIME_PART|-->>  15:55
+TIME_END|-->>  15:55
 GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  Ph 078A
 UNITS|-->>  9-0-0
@@ -9162,7 +9161,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Cross, M
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  107 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph/APh/EE/BE  118A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Physics of Measurement
@@ -9170,7 +9169,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Roukes, M
 DAY_TIME|-->>  TR 14:30 - 15:55
 LOCATION|-->>  107 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph 125A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Quantum Mechanics
@@ -9178,7 +9177,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Wise, M
 DAY_TIME|-->>  MWF 10:00 - 10:55
 LOCATION|-->>  107 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph 127A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Statistical Physics
@@ -9186,7 +9185,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Alicea, J
 DAY_TIME|-->>  TR 13:00 - 14:25
 LOCATION|-->>  107 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph 129A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Mathematical Methods of Physics
@@ -9194,7 +9193,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Schwarz, J
 DAY_TIME|-->>  TR 09:00 - 10:25
 LOCATION|-->>  103 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph 171
 UNITS|-->>  +
 COURSE_TITLE|-->>  Reading and Independent Study
@@ -9711,7 +9710,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Perona, P
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  080 MRE
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph 205A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Relativistic Quantum Mechanics
@@ -9727,7 +9726,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Cheung, C
 DAY_TIME|-->>  TF 14:30 - 15:55
 LOCATION|-->>  269 LAU
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph/CS 219A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Quantum Computation
@@ -9735,7 +9734,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Preskill, J / Kitaev, A
 DAY_TIME|-->>  MW 14:30 - 15:55
 LOCATION|-->>  269 LAU
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph/APh 223A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Advanced Condensed-Matter Physics
@@ -9743,7 +9742,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Yeh, N
 DAY_TIME|-->>  MW 11:00 - 12:25
 LOCATION|-->>  107 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph 230A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Elementary Particle Theory
@@ -9752,7 +9751,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Gukov, S
 DAY_TIME|-->>  MW 09:00 - 10:25
 LOCATION|-->>  469 LAU
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph 236A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Relativity
@@ -9760,7 +9759,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Chen, Y / Adhikari, R
 DAY_TIME|-->>  MW 13:00 - 14:25
 LOCATION|-->>  107 DWN
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ph 242A
 UNITS|-->>  2-0-1
 COURSE_TITLE|-->>  Physics Seminar
@@ -10059,9 +10058,9 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ordeshook, P
 DAY_TIME|-->>  MWF 15:00 - 15:55
 LOCATION_PART|-->>  Lecture Hall
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 LOCATION_PART|-->>  BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  PS 099A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Political Science Research Seminar
@@ -10069,7 +10068,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ordeshook, P
 A|-->>  A
 A|-->>  A
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  PS 132
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Formal Theories in Political Science
@@ -10095,15 +10094,15 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Paul, L
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  25 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Psy/CNS 105A
-UNSURE|-->>  1.5-0-3.5
+UNITS|-->>  1.5-0-3.5
 COURSE_TITLE|-->>  Frontiers in Neuroeconomics
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  O'Doherty, J
 DAY_TIME|-->>  M 10:30 - 11:55
 LOCATION|-->>  125 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  Ec/Psy 109
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Frontiers in Behavioral Economics
@@ -10111,7 +10110,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Camerer, C
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  127 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  SS 098
 UNITS|-->>  +
 COURSE_TITLE|-->>  Reading in Social Science
@@ -10127,11 +10126,11 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Ligett, K
 DAY_TIME|-->>  MW 10:30 - 11:55
 LOCATION|-->>  213 ANB
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  SS 201A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Analytical Foundations of Social Science
-UNSURE|-->>  Open to Social Science graduate students only.
+ANNOTATION|-->>  Open to Social Science graduate students only.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Saito, K
 DAY_TIME|-->>  TR 17:00 - 18:25
@@ -10140,7 +10139,7 @@ GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  SS 202A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Political Theory
-UNSURE|-->>  Open to Social Science graduate students only.
+ANNOTATION|-->>  Open to Social Science graduate students only.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Palfrey, T
 DAY_TIME|-->>  TR 09:00 - 10:25
@@ -10149,7 +10148,7 @@ GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  SS 205A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Foundations of Economics
-UNSURE|-->>  Open to Social Science graduate students only.
+ANNOTATION|-->>  Open to Social Science graduate students only.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Border, K
 DAY_TIME|-->>  TR 14:30 - 15:55
@@ -10170,11 +10169,11 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Cvitanic, J
 DAY_TIME|-->>  TR 17:00 - 18:25
 LOCATION|-->>  125 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  SS 222A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Econometrics
-UNSURE|-->>  Open to graduate students only.
+ANNOTATION|-->>  Open to graduate students only.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Shum, M
 DAY_TIME|-->>  MW 13:00 - 14:25
@@ -10187,7 +10186,7 @@ SECTION|-->>  01
 PROFESSOR_NAME|-->>  Sherman, R
 DAY_TIME|-->>  TR 10:30 - 11:55
 LOCATION|-->>  19 BAX
-COURSE_TITLE|-->>  
+BLANK_LINE|-->>  
 COURSE_NAME|-->>  SS 229A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  Theoretical and Quantitative Dimensions of Historical Development
@@ -10199,7 +10198,7 @@ GRADE_SCHEME|-->>  LETTER
 COURSE_NAME|-->>  SS 231A
 UNITS|-->>  3-0-6
 COURSE_TITLE|-->>  American Politics
-UNSURE|-->>  Open to graduate students only.
+ANNOTATION|-->>  Open to graduate students only.
 SECTION|-->>  01
 PROFESSOR_NAME|-->>  Alvarez, R
 DAY_TIME|-->>  T 13:00 - 15:55
@@ -10335,7 +10334,7 @@ PROFESSOR_NAME|-->>  Lester, H
 A|-->>  A
 A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
-UNSURE|-->>  CAM100
+COURSE_NAME|-->>  CAM100
 UNITS|-->>  36-0-0
 COURSE_TITLE|-->>  Cambridge Scholars Program
 SECTION|-->>  01
@@ -10343,7 +10342,7 @@ COURSE_TITLE|-->>  Staff
 A|-->>  A
 A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
-UNSURE|-->>  CPH100
+COURSE_NAME|-->>  CPH100
 UNITS|-->>  36-0-0
 COURSE_TITLE|-->>  Copenhagen Scholars Program
 SECTION|-->>  01
@@ -10351,7 +10350,7 @@ COURSE_TITLE|-->>  Staff
 A|-->>  A
 A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
-UNSURE|-->>  UCL100
+COURSE_NAME|-->>  UCL100
 UNITS|-->>  36-0-0
 COURSE_TITLE|-->>  University College London Scholars Program
 SECTION|-->>  01
@@ -10359,7 +10358,7 @@ COURSE_TITLE|-->>  Staff
 A|-->>  A
 A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
-UNSURE|-->>  EDN100
+COURSE_NAME|-->>  EDN100
 UNITS|-->>  36-0-0
 COURSE_TITLE|-->>  University of Edinburgh Scholars Program
 SECTION|-->>  01
@@ -10367,7 +10366,7 @@ COURSE_TITLE|-->>  Staff
 A|-->>  A
 A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
-UNSURE|-->>  EPT100
+COURSE_NAME|-->>  EPT100
 UNITS|-->>  36-0-0
 COURSE_TITLE|-->>  Ecole Polytechnique Scholars Program
 SECTION|-->>  01
@@ -10375,7 +10374,7 @@ COURSE_TITLE|-->>  Staff
 A|-->>  A
 A|-->>  A
 GRADE_SCHEME|-->>  PASS-FAIL
-UNSURE|-->>  MEL100
+COURSE_NAME|-->>  MEL100
 UNITS|-->>  0-0-0
 COURSE_TITLE|-->>  Melbourne Scholars Program
 SECTION|-->>  01
