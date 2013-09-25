@@ -91,7 +91,7 @@ def initial_parse(current_line):
 	(lambda t, s: [flatten_level_one_list(t), s], 3),
 	(lambda t, s: [map(lambda string: string.split('/'), t), s], 4),
 	(lambda t, s: [flatten_level_one_list(t), s], 5),
-	(lambda t, s: [[word in t if len(word) > 0], s], 6)
+	(lambda t, s: [filter(lambda word: len(word) > 0, t), s], 6)
 	]
 
 	# Each of the func's in initial_parse_functions is run on [token, string]
