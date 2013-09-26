@@ -61,7 +61,7 @@ course_options = \
 #   a list whose numbers of pairs of strings, e.g. [("Vanier", "M")]
 #
 # days;
-#   a list of lists of 1-7, e.g. [[1,3,5], 2]; an empty list denotes 'Arranged'
+#   a list of lists of 1-7, e.g. [[1,3,5], 2]; an empty list denotes 'Arranged', 0 denotes organizational meeting
 #
 # times;
 #   a list of pairs, e.g. [(10.5, 12), (13, 14)]; empty denotes 'Arranged'
