@@ -322,12 +322,35 @@ def parse_units(token, string):
 def parse_section(token, string):
 	return int(string)
 
+def parse_professor(token, string):
+	fence_marks = [0] + [a+2 for a in range(len(token)) if ',' in token[a]]
+
+	# remove commas
+	token = [tok.rstrip(',') for tok in token]
+	return [token[fence_marks[i]: fence_marks[i+1]] for i in range(len(fence_marks) - 1)]
 
 
-LINE_TYPES = {"COURSE_NAME" : [is_course_name],
-				  "UNITS" : [is_units],
-				  "SECTION" : [is_section],
-				  "PROFESSOR_NAME" : [is_professor_name],
+
+# TOOO:
+# Write a parser for each of the applicable line types
+# below.
+#
+# for an example of each type, take a look at
+# typed_c.txt
+#
+# add them to the list corresponding to each line type
+#
+# also take a look at read_caltech_schedule.py
+# for a proposed spec.
+#
+#
+# looking forward to your pull requests ...
+
+
+LINE_TYPES = {"COURSE_NAME" : [is_course_name, parse_course_name],
+				  "UNITS" : [is_units, parse_units],
+				  "SECTION" : [is_section, parse_section],
+				  "PROFESSOR_NAME" : [is_professor_name, parse_professor],
 				  "DAY_TIME" : [is_day_time],
 				  "LOCATION" : [is_location],
 				  "GRADE_SCHEME" : [is_grade_scheme],
