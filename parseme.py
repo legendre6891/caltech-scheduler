@@ -260,7 +260,9 @@ def initial_parse(current_line):
 	(lambda t, s: [flatten_level_one_list(t), s], 3),
 	(lambda t, s: [map(lambda string: string.split('/'), t), s], 4),
 	(lambda t, s: [flatten_level_one_list(t), s], 5),
-	(lambda t, s: [filter(lambda word: len(word) > 0, t), s], 6)
+	(lambda t, s: [filter(lambda word: len(word) > 0, t), s], 6),
+	(lambda t, s: [map(word_number_split, t),s], 7),
+	(lambda t, s: [flatten_level_one_list(t), s], 8),
 	]
 
 	# Each of the func's in initial_parse_functions is run on [token, string]
@@ -275,20 +277,6 @@ def initial_parse(current_line):
 
 	return [token, string]
 
-LINE_TYPES = {"COURSE_NAME" : [is_course_name],
-				  "UNITS" : [is_units],
-				  "SECTION" : [is_section],
-				  "PROFESSOR_NAME" : [is_professor_name],
-				  "DAY_TIME" : [is_day_time],
-				  "LOCATION" : [is_location],
-				  "GRADE_SCHEME" : [is_grade_scheme],
-				  "A" : [is_A],
-				  "LOCATION_PART" : [is_location_part],
-				  "ANNOTATION" : [is_annotation],
-				  "TIME_START" : [is_time_start],
-				  "TIME_END" : [is_time_end],
-				  "COURSE_TITLE" : [is_course_title],
-				  "UNSURE": [is_unsure]}
 
 
 def identify_type(line):
@@ -306,7 +294,8 @@ def identify_type(line):
 				 "TIME_START",
 				 "TIME_END",
 				 "COURSE_TITLE",
-				 "UNSURE"]
+				 "UNSURE", # this should always be last
+				 "BLANK_LINE"]
 
 	if line == "":
 		return "BLANK_LINE"
@@ -320,11 +309,38 @@ def identify_type(line):
 			return t
 
 
+def parse_course_name(token, string):
+	return (token[:-1], token[-1])
+
+def parse_units(token, string):
+	if string == "+":
+		return (0.0, 0.0, 0.0)
+	else:
+		# float! not int, to deal with 1.5-0-2.5
+		return tuple([float(w) for w in string.split("-")])
+
+def parse_section(token, string):
+	return int(string)
+
+
+
+LINE_TYPES = {"COURSE_NAME" : [is_course_name],
+				  "UNITS" : [is_units],
+				  "SECTION" : [is_section],
+				  "PROFESSOR_NAME" : [is_professor_name],
+				  "DAY_TIME" : [is_day_time],
+				  "LOCATION" : [is_location],
+				  "GRADE_SCHEME" : [is_grade_scheme],
+				  "A" : [is_A],
+				  "LOCATION_PART" : [is_location_part],
+				  "ANNOTATION" : [is_annotation],
+				  "TIME_START" : [is_time_start],
+				  "TIME_END" : [is_time_end],
+				  "COURSE_TITLE" : [is_course_title],
+				  "UNSURE": [is_unsure]}
 
 def main():
 	print initial_parse(argv[1])
-
-
 
 if __name__ == '__main__':
 	main()
