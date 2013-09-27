@@ -329,7 +329,7 @@ def parse_professor(token, string):
 	token = [tok.rstrip(',') for tok in token]
 	return [token[fence_marks[i]: fence_marks[i+1]] for i in range(len(fence_marks) - 1)]
 
-def processTime(t):
+def process_time(t):
 	[left, right] = t.split(':')
 	if right == '00':
 		return int(left)
@@ -337,7 +337,7 @@ def processTime(t):
 		return int(left) + 1
 	return float(left) + float(right) / 60.0
 
-def processDays(day_string):
+def process_days(day_string):
 	# A 0 will stand for organizational meeting (for now)
     day_to_num = {'M': 1, 'T': 2, 'W': 3, 'R': 4, 'F': 5, 'S': 6}
     return_list = []
@@ -356,10 +356,10 @@ def parse_day_time(token, string):
     Sample input: ['MWF', '11:30', '-', '13:55']
     Sample output: [[1, 3, 5], (11.5, 14)]
     '''
-    day_list = processDays(token[0])
+    day_list = process_days(token[0])
     start_time, end_time = filter(lambda s: len(s) > 1, token[1:])
     # Gives us filtered = ['11:30', '13:00']
-    return [day_list, (processTime(start_time), processTime(end_time))]
+    return [day_list, (process_time(start_time), process_time(end_time))]
 
 def parse_grade_scheme(token, string):
 	return string
@@ -379,12 +379,22 @@ def parse_time_start(token, string):
 	Sample input: (['OM,M', '09:00', '-'], 'OM,M 09:00 -')
 	Sample output: ([0, 1], 9)
 	'''
-	day_list = processDays(token[0])
+	day_list = process_days(token[0])
 	time = filter(lambda s: re.match('(2[0-3]|0?[0-9]|1[0-9]): ?([0-5][0-9])', s), string.split(' '))
-	return (day_list, processTime(time[0]))
+	return (day_list, process_time(time[0]))
 
 def parse_time_end(token, string):
-	pass
+	return process_time(string)
+
+def parse_A(token, string):
+	return string
+
+def parse_location_part(token, string):
+	return string
+
+
+def parse_unsure(token, string):
+	raise Exception("UNSURE LINE")
 
 # TOOO:
 # Write a parser for each of the applicable line types
@@ -409,13 +419,13 @@ LINE_TYPES = {"COURSE_NAME" : [is_course_name, parse_course_name],
 				  "DAY_TIME" : [is_day_time, parse_day_time],
 				  "LOCATION" : [is_location, parse_location],
 				  "GRADE_SCHEME" : [is_grade_scheme, parse_grade_scheme],
-				  "A" : [is_A],
-				  "LOCATION_PART" : [is_location_part],
-				  "ANNOTATION" : [is_annotation],
-				  "TIME_START" : [is_time_start],
-				  "TIME_END" : [is_time_end],
-				  "COURSE_TITLE" : [is_course_title],
-				  "UNSURE": [is_unsure]}
+				  "A" : [is_A, parse_A],
+				  "LOCATION_PART" : [is_location_part, parse_location_part],
+				  "ANNOTATION" : [is_annotation, parse_annotation],
+				  "TIME_START" : [is_time_start, parse_time_start],
+				  "TIME_END" : [is_time_end, parse_time_end],
+				  "COURSE_TITLE" : [is_course_title, parse_course_title],
+				  "UNSURE": [is_unsure, parse_unsure]}
 
 def main():
 	print initial_parse(argv[1])
