@@ -93,14 +93,24 @@ def main():
 	    lines = f.readlines()
 
 	course_exceptions = []
+	writeout = []
 	for line in lines:
 		line = line.rstrip()
+		writeout.append[line]
+		''' TODO:
+		Append lines to writeout until we reach a course title.
 
+		Then send writeout to process_lines, and reset writeout, appending the new course title to it.
+
+		Rinse and repeat until EOF?
+		'''
 		print identify_type(line) + "|-->>  " + line
 		# if identify_type(line) == "UNSURE":
 		# 	course_exceptions.append(line)
 
 	# pprint(list(set(course_exceptions)))
 
+def process_lines(lines):
+	# 
 if __name__ == '__main__':
 	main()
