@@ -74,7 +74,7 @@ course_options = \
 #   a list of strings, e.g. ["BAX Auditorium", "SLN 51"];
 #   empty denotes 'Arranged'
 #
-# grading;
+# grade_scheme;
 #   one of the strings "LETTER", "PASS-FAIL", "EITHER"
 #
 # annotation;
