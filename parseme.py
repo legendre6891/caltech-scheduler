@@ -50,7 +50,7 @@ def is_sublist_of(xs, ys):
 def is_day_abbreviation(words):
 	# first test whether token[0] is a date abbreviation;
 	allowed_abbreviations = "MTWRFS"
-	allowed_words = ["OM"]
+	allowed_words = ["OM", "OM,A"]
 
 	is_abbreviated = lambda word: all([ch in allowed_abbreviations for ch in word])
 	is_allowed = lambda word: word in allowed_words
@@ -377,11 +377,11 @@ def parse_time_start(token, string):
 	''' Time start usually has a day_string starting the line.
 
 	Sample input: (['OM,M', '09:00', '-'], 'OM,M 09:00 -')
-	Sample output: ([0, 1], 9)
+	Sample output: [[0, 1], 9]
 	'''
 	day_list = process_days(token[0])
 	time = filter(lambda s: re.match('(2[0-3]|0?[0-9]|1[0-9]): ?([0-5][0-9])', s), string.split(' '))
-	return (day_list, process_time(time[0]))
+	return [day_list, process_time(time[0])]
 
 def parse_time_end(token, string):
 	return process_time(string)
@@ -411,21 +411,97 @@ def parse_unsure(token, string):
 #
 # looking forward to your pull requests ...
 
+def action_course_name(data, course):
+	# Data is the output of parse_course_name. (['ACM', 'Ma', 'EE'], '095A')
+	copy = course.copy()
+	copy['option'] = data[0]
+	copy['number'] = data[1]
+	return copy
 
-LINE_TYPES = {"COURSE_NAME" : [is_course_name, parse_course_name],
-				  "UNITS" : [is_units, parse_units],
-				  "SECTION" : [is_section, parse_section],
-				  "PROFESSOR_NAME" : [is_professor_name, parse_professor],
-				  "DAY_TIME" : [is_day_time, parse_day_time],
-				  "LOCATION" : [is_location, parse_location],
-				  "GRADE_SCHEME" : [is_grade_scheme, parse_grade_scheme],
-				  "A" : [is_A, parse_A],
-				  "LOCATION_PART" : [is_location_part, parse_location_part],
-				  "ANNOTATION" : [is_annotation, parse_annotation],
-				  "TIME_START" : [is_time_start, parse_time_start],
-				  "TIME_END" : [is_time_end, parse_time_end],
-				  "COURSE_TITLE" : [is_course_title, parse_course_title],
-				  "UNSURE": [is_unsure, parse_unsure]}
+def action_course_title(data, course):
+	# Data is a course title string.
+	copy = course.copy()
+	copy['title'] = data
+	return copy
+
+def action_section(data, course):
+	copy = course.copy()
+	copy['section'] = data
+	return copy
+
+def action_units(data, course):
+	copy = course.copy()
+	copy['units'] = data
+	return copy
+
+def action_professor_name(data, course):
+	copy = course.copy()
+	copy['professors'] = data
+	return copy
+
+def action_day_time(data, course):
+	copy = course.copy()
+	copy['days'] += [data[0]]
+	copy['times'].append(data[1])
+	return copy
+
+def action_location(data, course):
+	copy = course.copy()
+	copy['locations'].append(data)
+	return copy
+
+def action_grade_scheme(data, course):
+	copy = course.copy()
+	copy['grading'] = data
+	return copy
+
+def action_A(data, course):
+	''' Ignore A but set default values at beginning? Or set them just before publishing. If the day/time/location keys do not exist before publishing, set them to default values.
+	'''
+	pass
+
+def action_location_part(data, course):
+	copy = course.copy()
+	course['location'] += data
+	return course
+
+def action_annotation(data, course):
+	copy = course.copy()
+	copy['annotation'] += data
+	return copy
+
+def action_unsure(data, course):
+	# cry
+	pass
+
+def action_time_start(data, course):
+	copy = course.copy()
+	course['days'] += [data[0]]
+	# Initialize the tuple with the start time
+	copy['times'].append((data[1]))
+	return copy
+
+def action_time_end(data, course):
+	copy = course.copy()
+	(start, end) = (copy['times'][-1], data)
+	copy['times'].pop()
+	copy['times'].append((start, end))
+	return copy
+
+LINE_TYPES = {"COURSE_NAME" : [is_course_name, parse_course_name, action_course_name],
+				  "UNITS" : [is_units, parse_units, action_units],
+				  "SECTION" : [is_section, parse_section, action_units],
+				  "PROFESSOR_NAME" : [is_professor_name, parse_professor, action_professor_name],
+				  "DAY_TIME" : [is_day_time, parse_day_time, action_day_time],
+				  "LOCATION" : [is_location, parse_location, action_location],
+				  "GRADE_SCHEME" : [is_grade_scheme, parse_grade_scheme, action_grade_scheme],
+				  "A" : [is_A, parse_A, action_A],
+				  "LOCATION_PART" : [is_location_part, parse_location_part, action_location_part],
+				  "ANNOTATION" : [is_annotation, parse_annotation, action_annotation],
+				  "TIME_START" : [is_time_start, parse_time_start, action_time_start],
+				  "TIME_END" : [is_time_end, parse_time_end, action_time_end],
+				  "COURSE_TITLE" : [is_course_title, parse_course_title, action_course_title],
+				  "UNSURE": [is_unsure, parse_unsure, parse_unsure]}
 
 def main():
 	print initial_parse(argv[1])
