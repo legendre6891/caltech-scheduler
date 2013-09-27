@@ -411,6 +411,8 @@ def parse_unsure(token, string):
 #
 # looking forward to your pull requests ...
 
+# TODO (maybe) Replace key checking with KeyError exception handling
+
 def action_course_name(data, course):
 	# Data is the output of parse_course_name. (['ACM', 'Ma', 'EE'], '095A')
 	copy = course.copy()

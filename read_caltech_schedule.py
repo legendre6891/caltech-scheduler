@@ -122,13 +122,12 @@ def process_lines(lines):
 	Note: each entry in lines is a tuple of the form (line, line_type)
 	'''
 	course = {'id': current_id}
-	state = 'course'
 	for (line, line_type) in lines:
 		token, string = initial_parse(line)
-		if state == 'course':
-			parse_result = LINE_TYPES[line_type][1](token, string)
-			# action
-			LINE_TYPES[line_type][2](parse_result, course)
+		parse_result = LINE_TYPES[line_type][1](token, string)
+		# action
+		LINE_TYPES[line_type][2](parse_result, course)
+	caltech_courses.append(course)
 
 if __name__ == '__main__':
 	main()
