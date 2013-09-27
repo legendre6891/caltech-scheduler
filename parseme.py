@@ -329,7 +329,62 @@ def parse_professor(token, string):
 	token = [tok.rstrip(',') for tok in token]
 	return [token[fence_marks[i]: fence_marks[i+1]] for i in range(len(fence_marks) - 1)]
 
+def processTime(t):
+	[left, right] = t.split(':')
+	if right == '00':
+		return int(left)
+	elif right == '55':
+		return int(left) + 1
+	return float(left) + float(right) / 60.0
 
+def processDays(day_string):
+	# A 0 will stand for organizational meeting (for now)
+    day_to_num = {'M': 1, 'T': 2, 'W': 3, 'R': 4, 'F': 5, 'S': 6}
+    return_list = []
+    if 'OM' in day_string:
+    	s = day_string.replace('OM,', '')
+    	return_list = [0]
+    for day in s:
+    	return_list.append(day_to_num[day])
+    # return_list.sort() is this needed?
+    return return_list
+
+def parse_day_time(token, string):
+    ''' Process the initial tokens with the guess that we are processing
+    day/times.
+
+    Sample input: ['MWF', '11:30', '-', '13:55']
+    Sample output: [[1, 3, 5], (11.5, 14)]
+    '''
+    day_list = processDays(token[0])
+    start_time, end_time = filter(lambda s: len(s) > 1, token[1:])
+    # Gives us filtered = ['11:30', '13:00']
+    return [day_list, (processTime(start_time), processTime(end_time))]
+
+def parse_grade_scheme(token, string):
+	return string
+
+def parse_location(token, string):
+	return string
+
+def parse_annotation(token, string):
+	return string
+
+def parse_course_title(token, string):
+	return string
+
+def parse_time_start(token, string):
+	''' Time start usually has a day_string starting the line.
+
+	Sample input: (['OM,M', '09:00', '-'], 'OM,M 09:00 -')
+	Sample output: ([0, 1], 9)
+	'''
+	day_list = processDays(token[0])
+	time = filter(lambda s: re.match('(2[0-3]|0?[0-9]|1[0-9]): ?([0-5][0-9])', s), string.split(' '))
+	return (day_list, processTime(time[0]))
+
+def parse_time_end(token, string):
+	pass
 
 # TOOO:
 # Write a parser for each of the applicable line types
@@ -351,9 +406,9 @@ LINE_TYPES = {"COURSE_NAME" : [is_course_name, parse_course_name],
 				  "UNITS" : [is_units, parse_units],
 				  "SECTION" : [is_section, parse_section],
 				  "PROFESSOR_NAME" : [is_professor_name, parse_professor],
-				  "DAY_TIME" : [is_day_time],
-				  "LOCATION" : [is_location],
-				  "GRADE_SCHEME" : [is_grade_scheme],
+				  "DAY_TIME" : [is_day_time, parse_day_time],
+				  "LOCATION" : [is_location, parse_location],
+				  "GRADE_SCHEME" : [is_grade_scheme, parse_grade_scheme],
 				  "A" : [is_A],
 				  "LOCATION_PART" : [is_location_part],
 				  "ANNOTATION" : [is_annotation],
