@@ -452,7 +452,7 @@ def action_location(data, course):
 
 def action_grade_scheme(data, course):
 	copy = course.copy()
-	copy['grading'] = data
+	copy['grade_scheme'] = data
 	return copy
 
 def action_A(data, course):
