@@ -495,13 +495,13 @@ LINE_TYPES = {"COURSE_NAME" : [is_course_name, parse_course_name, action_course_
 				  "DAY_TIME" : [is_day_time, parse_day_time, action_day_time],
 				  "LOCATION" : [is_location, parse_location, action_location],
 				  "GRADE_SCHEME" : [is_grade_scheme, parse_grade_scheme, action_grade_scheme],
-				  "A" : [is_A, parse_A],
+				  "A" : [is_A, parse_A, action_A],
 				  "LOCATION_PART" : [is_location_part, parse_location_part, action_location_part],
 				  "ANNOTATION" : [is_annotation, parse_annotation, action_annotation],
 				  "TIME_START" : [is_time_start, parse_time_start, action_time_start],
 				  "TIME_END" : [is_time_end, parse_time_end, action_time_end],
 				  "COURSE_TITLE" : [is_course_title, parse_course_title, action_course_title],
-				  "UNSURE": [is_unsure, parse_unsure]}
+				  "UNSURE": [is_unsure, parse_unsure, parse_unsure]}
 
 def main():
 	print initial_parse(argv[1])
