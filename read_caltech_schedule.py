@@ -2,7 +2,7 @@
 
 
 from sys import argv
-from parseme import identify_type
+from parseme import *
 from pprint import pprint
 
 
@@ -86,6 +86,8 @@ course_options = \
 
 
 
+caltech_courses = []
+current_id = 0
 
 def main():
 
@@ -93,14 +95,39 @@ def main():
 	    lines = f.readlines()
 
 	course_exceptions = []
+	writeout = []
 	for line in lines:
 		line = line.rstrip()
+		t = identify_type(line)
+		if t == 'COURSE_NAME':
+			process_lines(writeout)
+			current_id += 1
+			writeout = [(line, t)]
+		writeout.append((line, t))
+		''' TODO:
+		Append lines to writeout until we reach a course title.
 
-		print identify_type(line) + "|-->>  " + line
+		Then send writeout to process_lines, and reset writeout, appending the new course title to it.
+
+		Rinse and repeat until EOF?
+		'''
+		# print identify_type(line) + "|-->>  " + line
 		# if identify_type(line) == "UNSURE":
 		# 	course_exceptions.append(line)
 
 	# pprint(list(set(course_exceptions)))
+
+def process_lines(lines):
+	''' Process the lines from a single course, creating the dictionary for this course.
+	Note: each entry in lines is a tuple of the form (line, line_type)
+	'''
+	course = {'id': current_id}
+	for (line, line_type) in lines:
+		token, string = initial_parse(line)
+		parse_result = LINE_TYPES[line_type][1](token, string)
+		# action
+		LINE_TYPES[line_type][2](parse_result, course)
+	caltech_courses.append(course)
 
 if __name__ == '__main__':
 	main()

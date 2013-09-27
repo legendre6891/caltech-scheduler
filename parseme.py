@@ -411,6 +411,8 @@ def parse_unsure(token, string):
 #
 # looking forward to your pull requests ...
 
+# TODO (maybe) Replace key checking with KeyError exception handling
+
 def action_course_name(data, course):
 	# Data is the output of parse_course_name. (['ACM', 'Ma', 'EE'], '095A')
 	copy = course.copy()
@@ -426,7 +428,10 @@ def action_course_title(data, course):
 
 def action_section(data, course):
 	copy = course.copy()
-	copy['section'] = data
+	if not 'section' in copy.keys():
+ 		copy['section'] = [data]
+ 	else:
+ 		copy['section'] += [data]
 	return copy
 
 def action_units(data, course):
@@ -441,18 +446,27 @@ def action_professor_name(data, course):
 
 def action_day_time(data, course):
 	copy = course.copy()
-	copy['days'] += [data[0]]
-	copy['times'].append(data[1])
+	if not 'days' in copy.keys():
+		copy['days'] = [data[0]]
+	else:
+		copy['days'] += [data[0]]
+	if not 'times' in copy.times():
+		copy['times'] = data[1]
+	else:
+		copy['times'].append(data[1])
 	return copy
 
 def action_location(data, course):
 	copy = course.copy()
-	copy['locations'].append(data)
+	if not 'locations' in copy.keys():
+		copy['locations'] = [data]
+	else:
+		copy['locations'].append(data)
 	return copy
 
 def action_grade_scheme(data, course):
 	copy = course.copy()
-	copy['grading'] = data
+	copy['grade_scheme'] = data
 	return copy
 
 def action_A(data, course):
@@ -462,12 +476,19 @@ def action_A(data, course):
 
 def action_location_part(data, course):
 	copy = course.copy()
-	course['location'] += data
-	return course
+	if not 'locations' in copy.keys():
+		copy['locations'] = [data]
+	else:
+		# Append the data we have to the last item in locations
+		copy['locations'][-1] += data
+	return copy
 
 def action_annotation(data, course):
 	copy = course.copy()
-	copy['annotation'] += data
+	if not 'annotation' in copy.keys():
+		copy['annotation'] = [data]
+	else:
+		copy['annotation'].append(data)
 	return copy
 
 def action_unsure(data, course):
@@ -476,12 +497,20 @@ def action_unsure(data, course):
 
 def action_time_start(data, course):
 	copy = course.copy()
-	course['days'] += [data[0]]
+	if not 'days' in copy.keys():
+		copy['days'] = [data[0]]
+	else:
+		course['days'].append(data[0])
 	# Initialize the tuple with the start time
-	copy['times'].append((data[1]))
+	try:
+		copy['times'].append((data[1]))
+	except(KeyError):
+		# Initialize times to a list of one number
+		copy['times'] = [data]
 	return copy
 
 def action_time_end(data, course):
+	# Assumes that the course already has a time start
 	copy = course.copy()
 	(start, end) = (copy['times'][-1], data)
 	copy['times'].pop()
