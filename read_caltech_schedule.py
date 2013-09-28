@@ -1,121 +1,122 @@
 #!/usr/bin/env python
-
-
 from sys import argv
 from parseme import *
 from pprint import pprint
 
 
-type_list = ["A",
-			 "ANNOTATION",
-			 "UNITS",
-			 "COURSE_NAME",
-			 "SECTION",
-			 "PROFESSOR_NAME",
-			 "GRADE_SCHEME",
-			 "DAY_TIME",
-			 "LOCATION",
-			 "LOCATION_PART",
-			 "TIME_START",
-			 "TIME_END",
-			 "COURSE_TITLE",
-			 "UNSURE", # this should always be last
-			 "BLANK_LINE"]
+class CaltechCourse(object):
+	"""docstring for CaltechCourse"""
+	def __init__(self):
+		super(CaltechCourse, self).__init__()
+		self.id = -1
+		self.year = 2014
+		self.season = "FALL"
+		self.options = []
+		self.number = "999A"
+		self.title = "Booty Hovse is the best"
+		self.sections = []
+		self.units = (0, 0, 0)
+		self.professors = []
+		self.days = []
+		self.organizational_meeting = False
+		self.times = []
+		self.locations = []
+		self.grade_scheme = "EITHER"
+		self.annotations = []
+		self.notes = []
+
+	def to_JSON(self):
+		raise NotImplementedError
+
+class CourseChunk(object):
+	"""docstring for CourseChunk"""
+	def __init__(self, chunk):
+		super(CourseChunk, self).__init__()
+		self.chunk = chunk
+
+	def singleton(self, line_type):
+		return [line for line in self.chunk if identify_type(line) == line_type][0]
 
 
-course_options = \
-['Ae', 'An', 'ACM', 'AM', 'APh', 'Art', 'Ay', 'BMB', 'BE', 'Bi',
- 'BEM', 'Ch', 'ChE', 'CDS', 'CNS', 'CS', 'CE', 'Ec', 'ESL', 'EE', 'E', 'En',
- 'ESE', 'EST', 'F', 'FS', 'Ge', 'H', 'HPS', 'Hum', 'L', 'Law', 'Ma', 'MS', 'ME',
- 'Mu', 'Pl', 'PE', 'Ph', 'PS', 'PA', 'Psy', 'SS', 'SA', 'Wr', 'CAM',
- 'CPH', 'UCL', 'EPT', 'MEL', 'EDN']
-
-# A caltech_course is a *dictionary* with the following fields:
-# -------------------------------------------------------------
-# id;
-#   a string, unique to each course
-#
-# year;
-#   an integer, denoting the year the class was held in
-#
-# season;
-#   one of the strings "FALL", "WINTER", "SPRING"
-#
-# option;
-#   a list of strings e.g. ["ACM", "Ma"];
-#   it shall follow option naming given above
-#
-# number;
-#   a *string* such as "108A", optionally ending in a number
-#
-# title;
-#   a title, e.g. "Electricity and Magnetism"
-#
-# section;
-#   an integer
-#
-# units;
-#   a *tuple* of three numbers, e.g. (3,0,6); + is coerced to (0,0,0)
-#
-# professors;
-#   a list whose numbers of pairs of strings, e.g. [("Vanier", "M")]
-#
-# days;
-#   a list of lists of 1-7, e.g. [[1,3,5], [2]];
-#   an empty list denotes 'Arranged'
-#
-# organizational_meeting:
-#   one of the values {true, false}
-#
-# times;
-#   a list of pairs, e.g. [(10.5, 12), (13, 14)]; empty denotes 'Arranged'
-#
-# locations;
-#   a list of strings, e.g. ["BAX Auditorium", "SLN 51"];
-#   empty denotes 'Arranged'
-#
-# grade_scheme;
-#   one of the strings "LETTER", "PASS-FAIL", "EITHER"
-#
-# annotation;
-#   a list of strings, e.g. ["Maximum Enrollment: 14 students"]
-#
-# notes;
-#   a list of strings, e.g. ["I hate this course"]
-#
+	def multiton(self, line_types):
+		return [line for line in self.chunk if identify_type(line) in line_types]
 
 
+	@property
+	def section_count(self):
+		s = 'SECTION'
+		return max([LINE_TYPES[s][1](*initial_parse(line)) for line in self.chunk if identify_type(line) == s])
 
-caltech_courses = []
-current_id = 0
+	@property
+	def options(self):
+		s = 'COURSE_NAME'
+		return LINE_TYPES[s][1](*initial_parse(self.singleton(s)))[0]
+
+	@property
+	def number(self):
+		s = 'COURSE_NAME'
+		return LINE_TYPES[s][1](*initial_parse(self.singleton(s)))[1]
+
+	@property
+	def title(self):
+		s = 'COURSE_TITLE'
+		return LINE_TYPES[s][1](*initial_parse(self.singleton(s)))
+
+	@property
+	def units(self):
+		s = 'UNITS'
+		return LINE_TYPES[s][1](*initial_parse(self.singleton(s)))
+
+	@property
+	def annotations(self):
+		s = ['ANNOTATION']
+		lines = self.multiton(s)
+		return ' '.join([LINE_TYPES['ANNOTATION'][1](*initial_parse(line)) for line in lines])
+
+def split_list(xs, criterion):
+	"""
+	Chop up the list `xs' based on `criterion'
+
+	For example:
+	xs = [A, A, A, X, A, X, A, X, X, A]
+	  where criterion(X) is true, criterion(A) is false.
+
+	the output is:
+	[[A, A, A], [X, A], [X, A], [X], [X, A]]
+	"""
+
+	fence_posts = [a for a in range(len(xs)) if criterion(xs[a])] + [len(xs)]
+	if 0 not in fence_posts:
+		fence_posts = [0] + fence_posts
+	return [xs[fence_posts[i]:fence_posts[i+1]] for i in range(len(fence_posts)-1)]
+
 
 def main():
 
 	with open(argv[1], "r") as f:
-	    lines = f.readlines()
+		lines = [line.rstrip() for line in f if line.strip() != '']
 
-	course_exceptions = []
-	writeout = []
-	for line in lines:
-		line = line.rstrip()
-		t = identify_type(line)
-		if t == 'COURSE_NAME':
-			process_lines(writeout)
-			current_id += 1
-			writeout = [(line, t)]
-		writeout.append((line, t))
-		''' TODO:
-		Append lines to writeout until we reach a course title.
 
-		Then send writeout to process_lines, and reset writeout, appending the new course title to it.
+	print "Chunking the file ... this may take some time"
+	chunks = split_list(lines, lambda l: identify_type(l) == 'COURSE_NAME')
+	print "DONE"
 
-		Rinse and repeat until EOF?
-		'''
-		# print identify_type(line) + "|-->>  " + line
-		# if identify_type(line) == "UNSURE":
-		# 	course_exceptions.append(line)
+	for index, chunk in enumerate(chunks):
+		try:
+			if chunk[0] == "BMB/Ch 202A":
+				tt = CourseChunk(chunk)
+		except:
+			print index
+			print chunk[index-1]
 
-	# pprint(list(set(course_exceptions)))
+	print 'sec len:', tt.section_count
+	print 'options:', tt.options
+	print 'units:', tt.units
+	print 'title:', tt.title
+	print 'number', tt.number
+	print 'annotations:', tt.annotations
+	# totality_courses = flatten_level_one_list([process_chunk(chunk) for chunk in chunks])
+	return
 
 def process_lines(lines):
 	''' Process the lines from a single course, creating the dictionary for this course.
