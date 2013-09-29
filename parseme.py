@@ -77,6 +77,14 @@ def is_section(token, string):
 	return is_int(string)
 
 def is_professor_name(token, string):
+	allowed_strings = ['Staff']
+	disallowed_strings = ['Analysis, I', 'Analysis, II']
+	
+	if string in allowed_strings:
+		return True
+	if string in disallowed_strings:
+		return False	
+
 	return token[-2][-1] == ',' and token[-1].isupper() and len(token[-1]) == 1
 
 def is_day_time(token, string):
@@ -283,11 +291,11 @@ def identify_type(line):
 	type_list = ["A",
 				 "ANNOTATION",
 				 "UNITS",
+				 "DAY_TIME",
 				 "COURSE_NAME",
 				 "SECTION",
 				 "PROFESSOR_NAME",
 				 "GRADE_SCHEME",
-				 "DAY_TIME",
 				 "LOCATION",
 				 "LOCATION_PART",
 				 "TIME_START",
@@ -322,6 +330,8 @@ def parse_section(token, string):
 	return int(string)
 
 def parse_professor(token, string):
+	if string == "Staff":
+		return [["Staff", "C"]]
 	fence_marks = [0] + [a+2 for a in range(len(token)) if ',' in token[a]]
 	# remove commas
 	token = [tok.rstrip(',') for tok in token]
@@ -340,11 +350,10 @@ def process_time(t):
 def process_days(day_string):
 	# A 0 will stand for organizational meeting (for now)
     # print day_string
-    day_to_num = {'M': 1, 'T': 2, 'W': 3, 'R': 4, 'F': 5, 'S': 6}
+    day_to_num = {'O': 0, 'M': 1, 'T': 2, 'W': 3, 'R': 4, 'F': 5, 'S': 6}
     return_list = []
     if 'OM' in day_string:
-    	s = day_string.replace('OM,', '')
-    	return_list = [0]
+    	day_string = day_string.replace('OM,', 'O')
     for day in day_string:
     	return_list.append(day_to_num[day])
     # return_list.sort() is this needed?

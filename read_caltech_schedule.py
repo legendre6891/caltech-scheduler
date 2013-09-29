@@ -1,8 +1,26 @@
 #!/usr/bin/env python
-from sys import argv
+from sys import argv, exit
 from parseme import *
 from pprint import pprint
 
+
+
+def split_list(xs, criterion):
+	"""
+	Chop up the list `xs' based on `criterion'
+
+	For example:
+	xs = [A, A, A, X, A, X, A, X, X, A]
+	  where criterion(X) is true, criterion(A) is false.
+
+	the output is:
+	[[A, A, A], [X, A], [X, A], [X], [X, A]]
+	"""
+
+	fence_posts = [a for a in range(len(xs)) if criterion(xs[a])] + [len(xs)]
+	if 0 not in fence_posts:
+		fence_posts = [0] + fence_posts
+	return [xs[fence_posts[i]:fence_posts[i+1]] for i in range(len(fence_posts)-1)]
 
 class CaltechCourse(object):
 	"""docstring for CaltechCourse"""
@@ -14,7 +32,7 @@ class CaltechCourse(object):
 		self.options = []
 		self.number = "999A"
 		self.title = "Booty Hovse is the best"
-		self.sections = []
+		self.section = 0
 		self.units = (0, 0, 0)
 		self.professors = []
 		self.days = []
@@ -48,8 +66,15 @@ class CourseChunk(object):
 
 	@property
 	def section_count(self):
+		return len(self.sections)
 		s = 'SECTION'
-		return max([LINE_TYPES[s][1](*initial_parse(line)) for line in self.chunks if identify_type(line) == s])
+		r = max([LINE_TYPES[s][1](*initial_parse(line)) for line in self.chunks if identify_type(line) == s])
+		print 'r = ', r
+		print 'other = ', len(self.sections)
+		print 'sections ='
+		pprint(self.sections)
+		assert r == len(self.sections)
+		return r
 
 	@property
 	def options(self):
@@ -120,23 +145,42 @@ class CourseChunk(object):
 			return ['A']
 		return [LINE_TYPES['DAY_TIME'][1](*initial_parse(a)) for a in merge]
 
+def process_chunk(chunk):
+	course_chunk = CourseChunk(chunk)
+	try:
+		courses = [CaltechCourse() for i in range(course_chunk.section_count)]
+	except:
+		print chunk
+		exit()
 
-def split_list(xs, criterion):
-	"""
-	Chop up the list `xs' based on `criterion'
 
-	For example:
-	xs = [A, A, A, X, A, X, A, X, X, A]
-	  where criterion(X) is true, criterion(A) is false.
+	print "---", course_chunk.title
+	for course in courses:
+		course.options = course_chunk.options
+		course.units = course_chunk.units
+		course.title = course_chunk.title
+		course.number = course_chunk.number
+		course.annotations = course_chunk.annotations
 
-	the output is:
-	[[A, A, A], [X, A], [X, A], [X], [X, A]]
-	"""
+	for i in range(len(courses)):
+		courses[i].locations = course_chunk.get_locations(i)
+		courses[i].grade_scheme = course_chunk.get_grade_scheme(i)
+		courses[i].professors = course_chunk.get_professors(i)
+		try:
+			courses[i].days = [a[0] for a in course_chunk.get_day_time(i)]
+		except:
+			courses[i].days = [['A']]
+		try:
+			courses[i].times = [a[1] for a in course_chunk.get_day_time(i)]
+		except:
+			courses[i].times = [['A']]
+		courses[i].section = i
+		courses[i].organizational_meeting = 0 in flatten_level_one_list(courses[i].days)
 
-	fence_posts = [a for a in range(len(xs)) if criterion(xs[a])] + [len(xs)]
-	if 0 not in fence_posts:
-		fence_posts = [0] + fence_posts
-	return [xs[fence_posts[i]:fence_posts[i+1]] for i in range(len(fence_posts)-1)]
+
+	return courses
+
+
 
 
 def main():
@@ -149,24 +193,26 @@ def main():
 	chunks = split_list(lines, lambda l: identify_type(l) == 'COURSE_NAME')
 	print "DONE"
 
-	for index, chunk in enumerate(chunks):
-		try:
-			if chunk[0] == "Ma 290":
-				tt = CourseChunk(chunk)
-		except:
-			raise ValueError("Class not found")
+	# for index, chunk in enumerate(chunks):
+	# 	try:
+	# 		if chunk[0] == "ACM300":
+	# 			tt = CourseChunk(chunk)
+	# 			print chunk
+	# 	except:
+	# 		raise ValueError("Class not found")
 
-	print 'sec len:', tt.section_count
-	print 'options:', tt.options
-	print 'units:', tt.units
-	print 'title:', tt.title
-	print 'number', tt.number
-	print 'annotations:', tt.annotations
-	print 'location of section 1:', tt.get_locations(0)
-	print 'grade of section 1:', tt.get_grade_scheme(0)
-	print 'professor of section 1:', tt.get_professors(0)
-	print 'times of section 1:', tt.get_day_time(0)
-	# totality_courses = flatten_level_one_list([process_chunk(chunk) for chunk in chunks])
+	# print 'sec len:', tt.section_count
+	# print 'options:', tt.options
+	# print 'units:', tt.units
+	# print 'title:', tt.title
+	# print 'number', tt.number
+	# print 'annotations:', tt.annotations
+	# print 'location of section 1:', tt.get_locations(0)
+	# print 'grade of section 1:', tt.get_grade_scheme(0)
+	# print 'professor of section 1:', tt.get_professors(0)
+	# print 'times of section 1:', tt.get_day_time(0)
+	totality_courses = flatten_level_one_list([process_chunk(chunk) for chunk in chunks])
+	import pdb; pdb.set_trace()
 	return
 
 if __name__ == '__main__':
