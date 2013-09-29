@@ -30,48 +30,96 @@ class CaltechCourse(object):
 
 class CourseChunk(object):
 	"""docstring for CourseChunk"""
-	def __init__(self, chunk):
+	def __init__(self, bchunk):
 		super(CourseChunk, self).__init__()
-		self.chunk = chunk
+		self.sections = split_list(bchunk, lambda c: identify_type(c) == 'SECTION')[1:]
+		self.chunks = bchunk
 
-	def singleton(self, line_type):
-		return [line for line in self.chunk if identify_type(line) == line_type][0]
+	def singleton(self, xs, line_type):
+		try:
+			return [line for line in xs if identify_type(line) == line_type][0]
+		except:
+			raise IndexError("Singleton not found")
+			
 
-
-	def multiton(self, line_types):
-		return [line for line in self.chunk if identify_type(line) in line_types]
+	def multiton(self, xs, line_types):
+		return [line for line in xs if identify_type(line) in line_types]
 
 
 	@property
 	def section_count(self):
 		s = 'SECTION'
-		return max([LINE_TYPES[s][1](*initial_parse(line)) for line in self.chunk if identify_type(line) == s])
+		return max([LINE_TYPES[s][1](*initial_parse(line)) for line in self.chunks if identify_type(line) == s])
 
 	@property
 	def options(self):
 		s = 'COURSE_NAME'
-		return LINE_TYPES[s][1](*initial_parse(self.singleton(s)))[0]
+		return LINE_TYPES[s][1](*initial_parse(self.singleton(self.chunks, s)))[0]
 
 	@property
 	def number(self):
 		s = 'COURSE_NAME'
-		return LINE_TYPES[s][1](*initial_parse(self.singleton(s)))[1]
+		return LINE_TYPES[s][1](*initial_parse(self.singleton(self.chunks, s)))[1]
 
 	@property
 	def title(self):
 		s = 'COURSE_TITLE'
-		return LINE_TYPES[s][1](*initial_parse(self.singleton(s)))
+		return LINE_TYPES[s][1](*initial_parse(self.singleton(self.chunks, s)))
 
 	@property
 	def units(self):
 		s = 'UNITS'
-		return LINE_TYPES[s][1](*initial_parse(self.singleton(s)))
+		return LINE_TYPES[s][1](*initial_parse(self.singleton(self.chunks, s)))
 
 	@property
 	def annotations(self):
 		s = ['ANNOTATION']
-		lines = self.multiton(s)
+		lines = self.multiton(self.chunks, s)
 		return ' '.join([LINE_TYPES['ANNOTATION'][1](*initial_parse(line)) for line in lines])
+
+	def get_locations(self, section):
+		s = 'LOCATION'
+		t = 'LOCATION_PART'
+
+		locations = self.multiton(self.sections[section], [s])
+		parts = self.multiton(self.sections[section], [t])
+
+
+		# LOCATION_PART should come first to match sections correctly!!
+		merged = [' '.join(parts)] + locations
+
+		if merged == ['']:
+			return ['A']
+		return merged
+
+	def get_grade_scheme(self, section):
+		s = 'GRADE_SCHEME'
+		try:
+			line = self.singleton(self.sections[section], s)
+			return line
+		except:
+			return "EITHER"
+
+	def get_professors(self, section):
+		s = 'PROFESSOR_NAME'
+		line = self.singleton(self.sections[section], s)
+		return LINE_TYPES[s][1](*initial_parse(line))
+
+	def get_day_time(self, section):
+		s = 'DAY_TIME'
+		t = 'TIME_START'
+		u = 'TIME_END'
+
+		normal_lines = self.multiton(self.sections[section], [s])
+		start_lines = self.multiton(self.sections[section], [t])
+		end_lines = self.multiton(self.sections[section], [u])
+
+		merge = [' '.join(a) for a in zip(start_lines, end_lines)] + normal_lines
+
+		if merge == []:
+			return ['A']
+		return [LINE_TYPES['DAY_TIME'][1](*initial_parse(a)) for a in merge]
+
 
 def split_list(xs, criterion):
 	"""
@@ -103,11 +151,10 @@ def main():
 
 	for index, chunk in enumerate(chunks):
 		try:
-			if chunk[0] == "BMB/Ch 202A":
+			if chunk[0] == "Ma 290":
 				tt = CourseChunk(chunk)
 		except:
-			print index
-			print chunk[index-1]
+			raise ValueError("Class not found")
 
 	print 'sec len:', tt.section_count
 	print 'options:', tt.options
@@ -115,20 +162,12 @@ def main():
 	print 'title:', tt.title
 	print 'number', tt.number
 	print 'annotations:', tt.annotations
+	print 'location of section 1:', tt.get_locations(0)
+	print 'grade of section 1:', tt.get_grade_scheme(0)
+	print 'professor of section 1:', tt.get_professors(0)
+	print 'times of section 1:', tt.get_day_time(0)
 	# totality_courses = flatten_level_one_list([process_chunk(chunk) for chunk in chunks])
 	return
-
-def process_lines(lines):
-	''' Process the lines from a single course, creating the dictionary for this course.
-	Note: each entry in lines is a tuple of the form (line, line_type)
-	'''
-	course = {'id': current_id}
-	for (line, line_type) in lines:
-		token, string = initial_parse(line)
-		parse_result = LINE_TYPES[line_type][1](token, string)
-		# action
-		LINE_TYPES[line_type][2](parse_result, course)
-	caltech_courses.append(course)
 
 if __name__ == '__main__':
 	main()

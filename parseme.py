@@ -111,7 +111,8 @@ def is_location(token, string):
 	 "TCT",
 	 "Garage TCT",
 	 "Library AVE",
-	 "L+R"]
+	 "L+R",
+	 "TR DAB"]
 	manual_buildings = ["L+R"]
 	manual_locations_tokens = [initial_parse(location)[0] \
 		for location in manual_locations]
@@ -277,8 +278,6 @@ def initial_parse(current_line):
 
 	return [token, string]
 
-
-
 def identify_type(line):
 
 	type_list = ["A",
@@ -324,10 +323,11 @@ def parse_section(token, string):
 
 def parse_professor(token, string):
 	fence_marks = [0] + [a+2 for a in range(len(token)) if ',' in token[a]]
-
 	# remove commas
 	token = [tok.rstrip(',') for tok in token]
-	return [token[fence_marks[i]: fence_marks[i+1]] for i in range(len(fence_marks) - 1)]
+	r = [token[fence_marks[i]: fence_marks[i+1]] for i in range(len(fence_marks) - 1)]
+
+	return [[' '.join(name[:-1])] + [name[-1]] for name in r]
 
 def process_time(t):
 	[left, right] = t.split(':')
@@ -339,12 +339,13 @@ def process_time(t):
 
 def process_days(day_string):
 	# A 0 will stand for organizational meeting (for now)
+    # print day_string
     day_to_num = {'M': 1, 'T': 2, 'W': 3, 'R': 4, 'F': 5, 'S': 6}
     return_list = []
     if 'OM' in day_string:
     	s = day_string.replace('OM,', '')
     	return_list = [0]
-    for day in s:
+    for day in day_string:
     	return_list.append(day_to_num[day])
     # return_list.sort() is this needed?
     return return_list
