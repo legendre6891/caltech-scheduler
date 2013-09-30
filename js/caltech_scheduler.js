@@ -37,7 +37,7 @@ annotations,
 fixed_time,
 times,
 days,
-locations,
+	locations,
 grades
 */
 

@@ -27,7 +27,7 @@ class CaltechCourse(object):
 	def __init__(self):
 		super(CaltechCourse, self).__init__()
 		self.id = -1
-		self.year = 2014
+		self.year = 2013
 		self.season = "FALL"
 		self.options = []
 		self.number = "999A"
@@ -44,7 +44,25 @@ class CaltechCourse(object):
 		self.notes = []
 
 	def to_JSON(self):
-		raise NotImplementedError
+		return \
+		{
+			'id' : self.id,
+			'year' : self.year,
+			'season' : self.season,
+			'options' : self.options,
+			'number' : self.number,
+			'title' : self.title,
+			'section' : self.section,
+			'units' : self.units,
+			'professors' : self.professors,
+			'days' : self.days,
+			'organizational_meeting' : self.organizational_meeting,
+			'times' : self.times,
+			'locations' : self.locations,
+			'grade_scheme' : self.grade_scheme,
+			'annotations' : self.annotations,
+			'notes' : self.notes,
+		}
 
 class CourseChunk(object):
 	"""docstring for CourseChunk"""
